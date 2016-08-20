@@ -1,0 +1,70 @@
+<html> 
+	<head>
+		<style>
+			.border {border: 1px solid black; width: 30%; padding: 35px; margin-top: 20px}
+			h1 {padding-left: 40px}
+		</style>
+	</head>
+	<body>
+		<h1> Form </h1>
+
+		<form action="http://www.server.com/program.php" method="post" class="border" enctype="multipart/form-data" autofocus>
+			<fieldset>
+				<legend> Name and password </legend>
+					<label for="age">Age:</label>
+					<input type="text" name="age" id="age" required><br><br>
+
+					<label for="name">Please enter your name</label><br>
+					<input type="text" name="name" id="name"><br><br>
+
+					<label for="password">Please enter your password </label><br>
+					<input type="password" name="password" id="password"><br><br>
+			</fieldset>
+			<br><br>
+			<fieldset>
+				<legend> Animal, IQ and City</legend>
+				<label for="item">Please select each of the following that you have:</label><br>
+				<input type="checkbox" name="item" value="dog" id="item"> Dog <br>
+				<input type="checkbox" name="item" value="bear" id="item"> Bear <br>
+				<input type="checkbox" name="item" value="owl" id="item"> Owl <br><br>		
+
+				<label for="iq">Please indicate level of IQ:</label> <br>
+				<input type="radio" name="iq" value="high" id="iq"> High <br>
+				<input type="radio" name="iq" value="medium" id="iq" checked> Medium <br>
+				<input type="radio" name="iq" value="low" id="iq"> Low <br><br>
+
+				<label for="cities">Please select city:</label> <br>
+				<select name="cities">
+						<option value="hk" id="cities">Hong Kong</option>
+						<option value="dk" id="cities">Denmark</option>
+						<option value="sp" id="cities">Spain</option>
+				</select><br><br>
+			</fieldset>
+
+			
+			<br><br>
+			<fieldset>
+			<legend> Some Text </legend>
+			<label for="sometext">Please enter some text here:</label>
+			<textarea rows="3" cols="60" name="feedback" id="sometext">text inside box!</textarea> <br><br>
+
+			<label for="othertext">Please enter something more:</label>
+			<textarea rows="3" cols="60" name="feedback" placeholder="enter the text here and it will autofocus" id="othertext" ></textarea> <br><br>
+		</fieldset>
+
+		<br><br>
+		<fieldset>
+			<legend>Upload Picture </legend>
+			<label for="file">Select file you want to upload:</label>
+			<input type="file" name="filetoupload" id="file"> </input><br><br>
+		</fieldset>
+<br><br>
+
+			<input type="submit" value="send">
+
+
+		</form>
+
+	</body>
+</html>
+
