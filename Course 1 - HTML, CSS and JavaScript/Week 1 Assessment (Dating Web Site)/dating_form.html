@@ -1,0 +1,63 @@
+<html> 
+	<head>
+		<style>
+			.border {border: 1px solid black; width: 80%; padding: 15px; margin-top: 20px; margin-left: 40px}
+			h1 {padding-left: 40px}
+			.w {width: 40%}
+			.t {vertical-align: top }
+		</style>
+	</head>
+	<body>
+		<h1> Please Enter Your Details For Our Dating Website! </h1>
+
+		<form action="http://www.server.com/program.php" method="post" class="border" enctype="multipart/form-data" autofocus>
+			<fieldset>
+				<legend> Your Face</legend>
+				<label for="file">Select file you want to upload:</label>
+				<input type="file" name="filetoupload" id="file"> </input><br><br>
+		</fieldset>
+
+		<fieldset>
+				<legend> Your General Details</legend>
+				<label for="name">Name</label>
+					<input type="text" name="name" id="name"><br>
+				<label for="gender">Gender:</label>
+					<input type="checkbox" name="gender" value="male" id="gender"> Male
+					<input type="checkbox" name="gender" value="female" id="gender"> Female <br>
+				<label for="age">Age:</label>
+					<input type="text" name="age" id="age" value="18" required><br>
+				<label for="birthday">Your Birthday: </label><input type="date" id="birthday"> </input><br>
+				<label for="cities">Which Country:</label>
+					<select name="country">
+						<option value="hk" id="country">Hong Kong</option>
+						<option value="dk" id="country">Denmark</option>
+						<option value="sp" id="country">Spain</option>
+					</select>
+			</fieldset>
+
+			<fieldset>
+				<legend> Your Indicators</legend>
+			<label for="height">Height: </label>Short <input type="range" id="height" min="0" max="100" step="5" value="50"> </input>Tall<br>
+			<label for="salary">Salary: </label>Poor <input type="range" id="salary" min="0" max="100" step="5" value="50"> </input>Rich<br>
+			</fieldset>
+
+	<fieldset>
+				<legend> Your Contact Information</legend>
+			<label for="email">Email:</label>
+					<input type="text" name="email" id="email"><br>
+			<label for="mobile">Mobile:</label>
+					<input type="text" name="mobile" id="mobile"><br>
+			<label for="address" class="t">Address:</label>
+				<textarea rows="3" cols="60" name="feedback" id="sometext" placeholder="Please enter your address" class="w"></textarea> <br>
+			<label for="item">Method to contact you:</label>
+				<input type="checkbox" name="contact" value="email" id="item"> email 
+				<input type="checkbox" name="contact" value="whatsap" id="item"> whatsap 
+				<input type="checkbox" name="contact" value="chat" id="item"> chat 
+				
+	</fieldset>
+			<br>
+			<input type="submit" name="Submit!">
+</form>
+</body>
+</html>
+
