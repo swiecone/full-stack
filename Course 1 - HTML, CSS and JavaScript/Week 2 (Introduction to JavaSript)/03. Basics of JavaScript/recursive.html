@@ -1,0 +1,21 @@
+<head>
+
+		<body onload="check_user_age()">
+
+			<h1> Recursive Example </h1>
+
+		<script type="text/javascript">
+
+		
+				alert("Its my " + build_great(5) +
+					"grandmother!");
+
+				function build_great(depth) {
+					if (depth > 0)
+						return "great" + build_great( depth - 1);
+					else 
+						return "";
+				}			
+		</script>
+		</body>
+</html>
