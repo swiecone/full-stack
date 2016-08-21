@@ -14,12 +14,17 @@
 
 			user_name=prompt("What is your name?");
 
-			if (user_name == "alex")
+			switch(user_name) {
+			case "alex":
 				alert("Welcome " + user_name +"!");
-			else if (user_name == "jesi")
+				break;
+			case "jesi":
 				alert("Welcome " + user_name +" and you are sexy mf!");
-			else
+				break;
+			default:
 				alert("Your name is not cool");
+			}
+			
 		</script>
 		</body>
 </html>
