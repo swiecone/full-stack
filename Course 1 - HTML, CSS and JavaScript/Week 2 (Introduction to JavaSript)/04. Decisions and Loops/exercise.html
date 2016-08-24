@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+    <script>
+	var todo = ["see doctor", "do assignment", "pay rent", 
+              "check bank account", "clean room"];
+
+	var priority = [3, 4, 1, 2, 5];
+	var index = 1;
+	var todoInOrderOfPriority = [];
+
+        while ( index < todo.length+1 ) {
+		position = priority.indexOf( index );
+		console.log("This is the position: "+position);
+		todoInOrderOfPriority.push( todo[position] );
+		console.log("This is the new task list as its being created:"+todoInOrderOfPriority);
+		console.log("This is the task in the position "+position+": "+ todo[position]);
+		index++;
+		console.log("This is the new value of index: "+index);
+        }
+
+	alert("Previous order:\n\n" + todo + "\n\n" 
+         + "Now in order of priority:\n\n" + todoInOrderOfPriority);
+    </script>
+</head>
+</html>
