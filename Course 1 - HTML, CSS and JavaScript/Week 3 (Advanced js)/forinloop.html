@@ -1,0 +1,21 @@
+<html><head>
+	<script>
+	var continents=["Australia", "Africa", "Antartica", "Eurasia", "America"];
+	var response, count=0;
+
+	for (var index in continents) {
+		response = confirm("Have you been to " + 
+						 	continents[index] + "?");
+		if (response) count++;
+	}
+
+	if (count == 0) {
+	alert("You have to travel more!");
+	}
+	else {
+	alert("You have been to "+ count +
+		" continents!");
+	}
+	
+	</script>
+</head></body>
