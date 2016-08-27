@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+    
+</head>
+<body>
+
+
+<script>
+     var pets = ["Dog","Cat","Rabbit","Hamster","Rabbit", 
+                 "Rabbit","Dog","Cat","Hamster","Hamster","Rabbit"];
+
+     var rabbitPositions = [], startSearchAt = 0;
+     do{
+         foundAt = pets.indexOf("Rabbit", startSearchAt);
+         if (foundAt != -1) {
+            rabbitPositions.push(foundAt);
+            console.log("Found position of 'Rabbit' at "+ foundAt)
+            startSearchAt = foundAt + 1;
+
+         }
+    } while( foundAt != -1)
+
+    alert(rabbitPositions); //This shows [2,4,5,10]
+    </script>    
+</body>
+
+</html>
