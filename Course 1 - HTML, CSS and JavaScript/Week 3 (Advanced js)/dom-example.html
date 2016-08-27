@@ -1,0 +1,27 @@
+</head>
+<body>
+
+	<h1> Hello </h1> 
+		<ul> 
+			<td> Alex </td>
+			<td> Alex </td>
+			<td> Alex </td>
+		</ul>
+
+<script>
+    function handleClick(event) {
+    	event.stopPropagation();
+
+    	var node = event.target 
+    	var thisPath = node.nodeName;
+
+    	while (node.parentNode) {
+    		node = node.parentNode;
+    		thisPath = node.nodeName + " > " + thisPath;
+    	}
+    	alert(thisPath);
+    }
+    </script>    
+</body>
+
+</html>

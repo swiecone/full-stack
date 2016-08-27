@@ -1,0 +1,43 @@
+</head>
+<body>
+
+	<h1> Hello </h1> 
+		<ul>
+ 			 <li>Coffee</li>
+ 			 <li>Tea</li>
+ 			 <li>Milk</li>
+		</ul>
+
+		<ol>
+ 			 <li>Coffee</li>
+ 			 <li>Tea</li>
+ 			 <li>Milk</li>
+		</ol>
+
+
+<script>
+    function handleClick(event) {
+    	event.stopPropagation();
+
+    	var node = event.target 
+    	var thisPath = node.nodeName;
+
+    	while (node.parentNode) {
+    		node = node.parentNode;
+    		thisPath = node.nodeName + " > " + thisPath;
+    	}
+    	alert(thisPath);
+    }
+
+    //Register the click event handler for all elements
+    function attachHandler(node) {
+    	if(node == null) return; 
+    	node.onClick = handleClick;
+
+    	for (var i = 0; i < node.childNodes.length; i++) 
+    		attachHandler(node.childNodes[i]);
+    }
+    </script>    
+</body>
+
+</html>
