@@ -1,0 +1,35 @@
+<html>
+<head>
+	<script>
+	var the_timer, x_position = 0, the_image;
+	function set_timer() {
+		the_image = document.getElementById("the_image");
+		x_position=x_position + 1;
+		the_image.style.left = x_position;
+		the_timer = setTimeout(set_timer, 50);
+	}
+
+	function stop_timer() {
+		clearTimeout(the_timer);
+	}
+
+	function set_countertimer() {
+		the_image = document.getElementById("the_image");
+		x_position=x_position - 1;
+		the_image.style.left = x_position;
+		the_timer = setTimeout(set_countertimer, 50);
+	}
+
+	</script>
+</head>
+<body onload="set_timer()">
+	<h1> Image moving </h1>
+	<button onclick="stop_timer()">Stop the image</button>
+	<button onclick="set_timer()">Move the image right</button>
+	<button onclick="set_countertimer()">Move the image left</button><br><br><br>
+
+
+	<img src="Alex_HS_cut.png" id="the_image" style="position:absolute; top: 100, left:0">
+
+</body>
+</html>

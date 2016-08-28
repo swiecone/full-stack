@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script>
+		var wait_duration;
+		function set_things_up(){
+			wait_duration = prompt("How long do you want to do sleep?");
+			wait_duration = wait_duration * 1000; // pass number to seconds as its in miliseconds 
+			setTimeout(show_wake_up_message, wait_duration);
+		}
+		function show_wake_up_message() {
+			alert("WAKE UP! WAKE UP! WAKE UP! WAKE UP! ");
+		}
+
+	</script>
+</head>
+<body onload="set_things_up()">
+	<h1> Alarm Clock example </h1>
+</body>
+</html>

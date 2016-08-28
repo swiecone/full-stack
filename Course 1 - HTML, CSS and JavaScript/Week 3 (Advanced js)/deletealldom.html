@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script>
+	
+	function remove_all_childs() {
+		var theNode =  document.getElementById("daddy");
+
+		while(theNode.firstChild)
+			theNode.removeChild(theNode.firstChild);
+		
+	}
+	</script>
+</head>
+<body id="daddy" onclick="remove_all_childs()">
+	<h1 id="my_text"> Click, and text everything will disapear</h1>
+	<h2 id="my_h2"> I'm about to disapear!</h2>
+	<h3 id="my_h3"> I'm  going to disapear!</h3>
+	<h4 id="my_h4"> I'm also  going to disapear!</h4>
+
+
+</body>
+</html>
