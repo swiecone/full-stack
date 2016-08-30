@@ -6,6 +6,7 @@
 			position: absolute;	
 		}
 
+		
 		#rightSide {
 			position: absolute;
 			left:600px;
@@ -17,20 +18,40 @@
 			left:0px;
 			height: 500px;
 					}
-		#id1 {
-			left:150px;
-			top: 150px;
-
-		}
-		</style>
 		</style>
 
 	</head>
-	<body>
+	<body onload="generateFaces()">
 		<h1> This is the match game!</h1>
 		<p> Click on the extra smiling face on the left </p>
 		<div id="leftSide">
-			<img src="http://home.cse.ust.hk/~rossiter/mooc/matching_game/smile.png" id="id1"></img>
 		</div>
 		<div id="rightSide"></div>
+		<script>
+		var theLeftSide = document.getElementById("leftSide");
+		var numberOfFaces = 5;
+
+
+		function generateFaces() {
+			 
+			 createdFaces = 0
+
+			 while (numberOfFaces < createdFaces) {
+			 	createdFaces += 1;
+			 	var newImage=document.createElement("img");
+				newImage.src="http://home.cse.ust.hk/~rossiter/mooc/matching_game/smile.png";
+	            var top_position = Math.random() * 400;
+	            var left_position = Math.random() * 400;
+	            newImage.style.top = top_position + "px";
+	            newImage.style.left = left_position + "px";
+	            theLeftSide.appendChild(newImage);
+	        }
+
+
+		}
+
+
+
+		</script>
+
 	</body>
