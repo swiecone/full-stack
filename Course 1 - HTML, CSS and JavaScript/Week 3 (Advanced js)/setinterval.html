@@ -1,0 +1,21 @@
+<html>
+<head>
+	<script>
+	var the_timer, x_position = 0, the_image;
+	function do_timer() {
+		the_image = document.getElementById("the_image");
+		x_position=x_position + 1;
+		the_image.style.left = x_position;
+	}
+
+
+	</script>
+</head>
+<body onload="the_timer=setInterval(do_timer, 50)">
+	<h1> Image moving </h1>
+	<button onclick="clearInterval(the_timer)">Stop the image</button><br><br><br>
+	
+	<img src="Alex_HS_cut.png" id="the_image" style="position:absolute; top: 100, left:0">
+
+</body>
+</html>
