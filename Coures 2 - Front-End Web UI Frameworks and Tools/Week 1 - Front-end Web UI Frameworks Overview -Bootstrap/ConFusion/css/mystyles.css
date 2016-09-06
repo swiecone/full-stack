@@ -29,6 +29,33 @@ address{
 	color: #0f0f0f;
 }
 
-.navbar{
-    margin-bottom: 0px;
+body {
+	align:center;
+	padding: 50px 0px 0px 0px;
+	z-index:0;
+}
+
+.navbar-inverse {
+	background: #303F9F;
+}
+
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus {
+	color: #fff;
+	background: #1A237E;
+}
+
+
+.navbar-inverse .navbar-nav > .open > a,
+.navbar-inverse .navbar-nav > .open > a:hover,
+.navbar-inverse .navbar-nav > .open > a:focus {
+	color: #fff;
+	background: #1A237E;
+}
+
+.navbar-inverse .navbar-nav .open .dropdown-menu > li > a,
+.navbar-inverse .navbar-nav .open .dropdown-menu {
+	background-color: #303F9F;
+	color: #eeeeee;
 }
