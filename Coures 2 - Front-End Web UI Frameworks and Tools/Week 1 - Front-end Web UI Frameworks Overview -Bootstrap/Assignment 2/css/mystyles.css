@@ -71,3 +71,10 @@ body {
     padding: 10px;
 }
 
+.nav>li>a {
+   width: 100px;
+}
+
+.affix {
+    top:100px;
+}
