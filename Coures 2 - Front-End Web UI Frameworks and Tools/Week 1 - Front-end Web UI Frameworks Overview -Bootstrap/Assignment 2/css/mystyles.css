@@ -78,3 +78,7 @@ body {
 .affix {
     top:100px;
 }
+
+#blacktext{
+	color: #333;
+}
