@@ -107,7 +107,9 @@
                 </div>
                  <div class="col-xs-12 col-sm-2">
                     <p style="passing:20px;"></p>
-                    <a class="btn btn-warning btn-lg btn-block" href="#booking-form">Make a booking</a>
+                   <a type="button" class="btn btn-warning btn-block"
+                    data-toggle="tooltip" title="Or Call us at +852 12345678"
+                     data-placement="bottom" href="#reserveform">Make a booking</a>
 
                 </div>
             </div>
@@ -306,7 +308,14 @@
 
 
 <span class="_hsShareImage hsShareImage">&nbsp;</span><div id="candyBankSidebar" data-login-status="false" data-db-status="true" class="activeFAB" style="text-align: left;"></div>
+
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+       <script>
+        $(document).ready(function(){
+        $('[data-toggle="tooltip"]').tooltip();
+         });
+    </script>
 
 </body></html>
