@@ -17,16 +17,29 @@
 .row-content{
 	.zero-margin(50px,0px);
 	border-bottom: 1px ridge;
+	min-height: 400px;
 }
 
 .row-footer {
 	.zero-margin(20px, 0px);
 	background-color: #AfAfAf;
-	min-height:400px;
 }
 
 .jumbotron{
 	.zero-margin(70px, 30px);
 	background-color:@light-indigo;
 	color:floralwhite;
+}
+
+.carousel {
+	background: @dark-indigo;
+	.item {
+			height: @carousel-height;
+			img{ 
+				left: 0;
+				min-height: @carousel-height;
+				position: absolute;
+				top: 0;
+			}
+		  }
 }
