@@ -31,7 +31,7 @@
         <div class="row row-content" ng-controller="menuController as menuCtrl">
             <div class="col-xs-12">
 
-          
+
                 <ul class="nav nav-tabs" role="tablists">
                     <li role="presentation"
                     ng-class="{active:menuCtrl.isSelected(1)}">
@@ -86,6 +86,7 @@
         app.controller('menuController', function(){
 
             this.tab = 1;
+
             this.filtText = '';
 
 
@@ -104,8 +105,8 @@
                            name:'Zucchipakoda',
                            image: 'images/zucchipakoda.png',
                            category: 'appetizer',
-                           label:'',
-                           labeltype: 'danger',
+                           label:'tasty!',
+                           labeltype: 'info',
                            price:'1.99',
                            description:'Deep fried Zucchini coated with mildly spiced Chickpea flour batter accompanied with a sweet-tangy tamarind sauce',
                            comment: ''
@@ -115,7 +116,7 @@
                            image: 'images/vadonut.png',
                            category: 'appetizer',
                            label:'recommended',
-                           labeltype: 'warning',
+                           labeltype: 'primary',
                            price:'1.99',
                            description:'A quintessential ConFusion experience, is it a vada or is it a donut?',
                            comment: ''
@@ -124,7 +125,7 @@
                            name:'ElaiCheese Cake',
                            image: 'images/elaicheesecake.png',
                            category: 'dessert',
-                           label:'',
+                           label:'1/2 price!',
                            labeltype: 'warning',
                            price:'2.99',
                            description:'A delectable, semi-sweet New York Style Cheese Cake, with Graham cracker crust and spiced with Indian cardamoms',
@@ -146,6 +147,7 @@
                         this.dishes = dishes;
 
                         this.select = function(setTab) {
+                            // variable set to what user selects
                             this.tab = setTab;
 
                             if (setTab == 2)
@@ -154,14 +156,14 @@
                                 this.filtText = "mains";
                             else if (setTab == 4)
                                 this.filtText = "dessert";
-                            else 
+                            else
                                 this.filtText = "";
                         }
 
                         this.isSelected = function (checkTab) {
                             return (this.tab == checkTab);
                         }
-              }); 
+              });
 
     </script>
 
