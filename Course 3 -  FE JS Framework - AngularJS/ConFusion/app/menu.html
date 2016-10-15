@@ -146,19 +146,19 @@
 
                         this.dishes = dishes;
 
-                        this.select = function(setTab) {
-                            // variable set to what user selects
-                            this.tab = setTab;
+                          this.select = function(setTab) {
+                              // variable set to what user selects
+                              this.tab = setTab;
 
-                            if (setTab == 2)
-                                this.filtText = "appetizer";
-                            else if (setTab == 3)
-                                this.filtText = "mains";
-                            else if (setTab == 4)
-                                this.filtText = "dessert";
-                            else
-                                this.filtText = "";
-                        }
+                              if (setTab == 2)
+                                  this.filtText = "appetizer";
+                              else if (setTab == 3)
+                                  this.filtText = "mains";
+                              else if (setTab == 4)
+                                  this.filtText = "dessert";
+                              else
+                                  this.filtText = "";
+                          }
 
                         this.isSelected = function (checkTab) {
                             return (this.tab == checkTab);
