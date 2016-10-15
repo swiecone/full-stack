@@ -66,7 +66,7 @@
                             </div>
                             <div class="media-body">
                                 <h2 class="media-heading">{{dish.name}}
-                                 <span class="label label-danger">{{dish.label}}</span>
+                                 <span class="label label-{{dish.labeltype}}">{{dish.label}}</span>
                                  <span class="badge">{{dish.price | currency}}</span></h2>
                                 <p>{{dish.description}}</p>
                             </div>
@@ -95,6 +95,7 @@
                            image: 'images/uthapizza.png',
                            category: 'mains',
                            label:'Hot',
+                           labeltype: 'danger',
                            price:'4.99',
                            description:'A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.',
                            comment: ''
@@ -104,6 +105,7 @@
                            image: 'images/zucchipakoda.png',
                            category: 'appetizer',
                            label:'',
+                           labeltype: 'danger',
                            price:'1.99',
                            description:'Deep fried Zucchini coated with mildly spiced Chickpea flour batter accompanied with a sweet-tangy tamarind sauce',
                            comment: ''
@@ -112,7 +114,8 @@
                            name:'Vadonut',
                            image: 'images/vadonut.png',
                            category: 'appetizer',
-                           label:'New',
+                           label:'recommended',
+                           labeltype: 'warning',
                            price:'1.99',
                            description:'A quintessential ConFusion experience, is it a vada or is it a donut?',
                            comment: ''
@@ -122,6 +125,7 @@
                            image: 'images/elaicheesecake.png',
                            category: 'dessert',
                            label:'',
+                           labeltype: 'warning',
                            price:'2.99',
                            description:'A delectable, semi-sweet New York Style Cheese Cake, with Graham cracker crust and spiced with Indian cardamoms',
                            comment: ''
@@ -131,7 +135,8 @@
                            name:'Paella Valenciana',
                            image: 'images/paella.jpg',
                            category: 'mains',
-                           label:'',
+                           label:'healthy',
+                           labeltype: 'success',
                            price:'8.99',
                            description:'A spanish dish that is the best in the world.  Highly recommended!',
                            comment: ''
