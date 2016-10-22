@@ -30,9 +30,11 @@
       <div class="row row-content">
 
     <div class="container">
-        <div class="row row-content" ng-controller="menuController as menuCtrl">
+        <div class="row row-content" ng-controller="MenuController">
             <div class="col-xs-12">
-
+ <button ng-click="toggleDetails()" class="btn btn-xs btn-primary pull-right" type="button">
+                        {{showDetails ? 'Hide Details':'Show Details'}}
+                    </button>  
 
                 <ul class="nav nav-tabs" role="tablists">
                     <li role="presentation"
@@ -58,9 +60,7 @@
                 </ul>
 
                   <div class="tab-content">
-                    <button ng-click="toggleDetails()" class="btn btn-xs btn-primary pull-right" type="button">
-                        {{showDetails ? 'Hide Details':'Show Details'}}
-                    </button>  
+                   
 
 
                        <ul class="media-list tab-pane fade in active">

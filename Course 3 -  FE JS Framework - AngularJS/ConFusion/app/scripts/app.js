@@ -1,13 +1,13 @@
 'use strict'
 angular.module('confusionApp', [])
 
-  .controller('menuController', [ '$scope', function($scope){
+  .controller('MenuController', [ '$scope', function($scope){
 
     $scope.tab = 1;
     $scope.filtText = '';
-    $scope.showDetails = false;
+    $scope.showDetails = true;
 
-                 var dishes=[
+                 $scope.dishes=[
                  {
                    name:'Uthapizza',
                    image: 'images/uthapizza.png',
@@ -61,7 +61,6 @@ angular.module('confusionApp', [])
                 }
                 ];
 
-                $scope.dishes = dishes;
 
                   $scope.select = function(setTab) {
                       // variable set to what user selects
