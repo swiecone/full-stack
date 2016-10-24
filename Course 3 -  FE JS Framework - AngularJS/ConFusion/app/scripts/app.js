@@ -1,5 +1,5 @@
 'use strict'
-angular.module('confusionApp', [])
+angular.module('confusionApp',   [])
 
   .controller('MenuController', [ '$scope', function($scope){
 
