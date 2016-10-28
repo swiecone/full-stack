@@ -1,5 +1,6 @@
 'use strict'
-angular.module('confusionApp',   [])
+
+angular.module('confusionApp', [])
 
   .controller('MenuController', [ '$scope', function($scope){
 
@@ -85,13 +86,15 @@ angular.module('confusionApp',   [])
             };
       }])
 
-  .controller('ContactController', [$scope, function($scope){
+  .controller('ContactController', ['$scope', function($scope){
 
+    $scope.feedback = {mychannel:"", firstName:"",
+                       lastName:"", agree:false, email:""};
 
 
   }])
 
-  .controller('FeedbackController', [$scope, function($scope){
+  .controller('FeedbackController', ['$scope', function($scope){
 
     
   }])
