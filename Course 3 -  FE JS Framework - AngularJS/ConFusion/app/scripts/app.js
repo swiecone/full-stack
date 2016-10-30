@@ -88,8 +88,8 @@ angular.module('confusionApp', [])
 
   .controller('ContactController', ['$scope', function($scope){
 
-    $scope.feedback = {mychannel:"", firstName:"",
-                       lastName:"", agree:false, email:""};
+    $scope.feedback = {mychannel:"", firstname:"",
+                       lastnßame:"", agree:false, email:""};
 
 
   }])

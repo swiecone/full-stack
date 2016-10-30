@@ -73,7 +73,7 @@
                         <label for="firstname" class="col-sm-2 control-label">First Name</label>
                         <div class="col-sm-10">
                         <input type="text" class="form-control" id="firstname" name="firstname" placeholder="Enter First Name"
-                            ng-model="feedback.firstName" required >
+                            ng-model="feedback.firstname" required >
                         <span ng-show="feedbackForm.firstname.$error.required &&
                             !feedbackForm.firstname.$pristine" class="help-block">Your first name is required.</span>
                         </div>
@@ -144,7 +144,7 @@
             </div>
              <div class="col-xs-12 col-sm-3">
                 <h3> Your Current Feedback: </h3>
-                    <p>{{feedback.firstName}} {{feedback.lastName | uppercase }} </p>    
+                    <p>{{feedback.firstname}} {{feedback.lastname | uppercase }} </p>    
                     <p> Contact Tel.: ({{feedback.tel.areaCode}}) - {{feedback.tel.number}} </p>
                     <p> Contact Email.: {{feedback.email}} </p>
                     <p ng-show="feedback.agree"> Contact by: {{feedback.mychannel}}</p>
