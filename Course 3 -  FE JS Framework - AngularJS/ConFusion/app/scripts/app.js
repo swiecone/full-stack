@@ -91,6 +91,12 @@ angular.module('confusionApp', [])
     $scope.feedback = {mychannel:"", firstname:"",
                        lastnßame:"", agree:false, email:""};
 
+    var channels = [{value:"tel", label:"Tel."}, 
+                    {value:"Email", label:"Email"}];
+
+    $scope.channels = channels;
+    $scope.invalidChannelSelection = false;
+
 
   }])
 
