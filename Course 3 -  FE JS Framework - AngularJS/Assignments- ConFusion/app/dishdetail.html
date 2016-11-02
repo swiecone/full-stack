@@ -26,7 +26,7 @@
 <body>
 
     <div class="container" ng-controller="DetailController">
-        <div class="row row-content"  >
+        <div class="row"  >
          
 
             <div class="col-xs-12">
@@ -60,8 +60,59 @@
                             </ul>
                           </div>
            </div>
+           
+           <div class="col-xs-9 col-xs-offset-1">
+              <form class="form-horizontal" name="commentForm"
+                    ng-submit="submitComment()" novalidate>
+                      
+                      <div class="form-group" ng-class="{ 'has-error' : commentForm.name.$error.required && !commentForm.name.$pristine}">
+                          <label for="name" class="col-sm-2 control-label">Your Name</label>
+                        <div class="col-sm-10">
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Your Name"
+                            ng-model="newComment.name" required >
+                        <span ng-show="commentForm.name.$error.required &&
+                            !commentForm.name.$pristine" class="help-block">Your name is required.</span>
+                        </div>
+                    </div>
 
+                    <div class="form-group"ng-class="{ 'has-error' : commentForm.starts.$error.required && !commentForm.starts.$pristine}">
+                      <label for="stars" class="col-sm-2 control-label">Number of Stars</label>
+                        <div class="col-sm-10">
+
+                              <label class="radio-inline">
+                                   <input type="radio" name="1">1</label>
+                              <label class="radio-inline">
+                                          <input type="radio" name="2">2 </label>
+                              <label class="radio-inline">
+                                          <input type="radio" name="3">3 </label>
+                            <label class="radio-inline">
+                                          <input type="radio" name="4">4 </label>
+                            <label class="radio-inline">
+                                          <input type="radio" name="5">5 </label>
+                        </div>
+                    </div>
+
+                    <div class="form-group"ng-class="{ 'has-error' : commentForm.newComment.$error.required && !commentForm.newComment.$pristine}">
+                      <label for="newComment" class="col-sm-2 control-label">Your Comment</label>
+                        <div class="col-sm-10">
+
+                                <textarea class="form-control" rows="5" id="comment"></textarea>
+
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <button type="submit" class="btn btn-primary" ng-disabled="commentForm.$invalid">Submit Comment</button>
+                        </div>
+                    </div>
+              </form>
+
+       </div>
       </div>
+      
+
+
   </div>
     <script src="../bower_components/angular/angular.min.js"></script>
     <script src="scripts/app.js"></script>

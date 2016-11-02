@@ -166,6 +166,9 @@ angular.module('confusionApp', [])
                     {
                       $scope.searchText = val;
                     }
+
+            $scope.newComment = {name:"", stars:"",
+                       comment:"",  date:""};
   }])
 
 ;
