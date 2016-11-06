@@ -161,12 +161,7 @@ angular.module('confusionApp', [])
                            ]
                     };
 
-
-            var starts = [{value:"1", label:"1"},
-                          {value:"2", label:"2"},
-                          {value:"3", label:"3"},
-                          {value:"4", label:"4"},
-                          {value:"5", label:"5"}]
+         
 
             $scope.commentSearch = function(val)
                     {
@@ -175,6 +170,16 @@ angular.module('confusionApp', [])
 
             $scope.newComment = {name:"", stars:"",
                        comment:"",  date:""};
+
+            var stars = [{label:"1", value:1},
+                            {label:"2", value:2},
+                            {label:"3", value:3},
+                            {label:"4", value:4},
+                            {label:"5", value:5},
+                          ];
+
+              $scope.stars = stars;
+
   }])
 
 ;
