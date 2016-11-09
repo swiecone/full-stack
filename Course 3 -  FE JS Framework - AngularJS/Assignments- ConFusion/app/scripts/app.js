@@ -1,6 +1,6 @@
 'use strict'
 
-angular.module('confusionApp', [])
+angular.module('confusionApp', ['ngRoute'])
 
   .controller('MenuController', [ '$scope', function($scope){
 
@@ -169,7 +169,7 @@ angular.module('confusionApp', [])
                     }
 
         var now = Date();
-        
+
         console.log(now);
 
             $scope.newComment = {author:" ", rating:"5",
