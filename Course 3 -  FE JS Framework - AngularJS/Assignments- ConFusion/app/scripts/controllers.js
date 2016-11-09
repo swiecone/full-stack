@@ -168,9 +168,10 @@ angular.module('confusionApp')
                       $scope.searchText = val;
                     }
 
-        var now = Date('date');
-        var newdate = now;
+        var now = Date();
+        var newdate = now.getDate();
         console.log(now);
+        console.log(newdate);
 
             $scope.newComment = {author:" ", rating:"5",
                        comment:"",  date:""};
