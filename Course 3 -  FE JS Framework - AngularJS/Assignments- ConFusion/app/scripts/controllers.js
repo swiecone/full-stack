@@ -63,32 +63,10 @@ angular.module('confusionApp')
     
   }])
 
-  .controller('DishDetailController', ['$scope', 'menuFactory', function($scope, menuFactory) {
+   .controller('DishDetailController', ['$scope', '$routeParams', 'menuFactory', function($scope, $routeParams, menuFactory) {
 
-            $scope.searchText = '';
-
-            $scope.dish= menuFactory.getDish(0);
-
-
-            $scope.commentSearch = function(val)
-                    {
-                      $scope.searchText = val;
-                    }
-
-        var now = Date();
-        
-        console.log(now);
-
-            $scope.newComment = {author:" ", rating:"5",
-                       comment:"",  date:""};
-
-                $scope.newComment.date = now;
-
-            $scope.submitComment = function(text){
-                console.log(text);
-                $scope.dish.comments.push(text);
-                $scope.newComment = {author:"", rating:"5",
-                       comment:"",  date:""};
-            }
+            var dish= menuFactory.getDish(parseInt($routeParams.id,10));                        
+            $scope.dish = dish;
+            
 
   }]);
