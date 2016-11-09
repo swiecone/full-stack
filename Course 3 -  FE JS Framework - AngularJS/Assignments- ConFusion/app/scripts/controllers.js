@@ -66,7 +66,8 @@ angular.module('confusionApp')
   .controller('DishDetailController', ['$scope', 'menuFactory', function($scope, menuFactory) {
 
             $scope.searchText = '';
-            $scope.dish= menuFactory.getDish(3);
+
+            $scope.dish= menuFactory.getDish(0);
 
 
             $scope.commentSearch = function(val)
