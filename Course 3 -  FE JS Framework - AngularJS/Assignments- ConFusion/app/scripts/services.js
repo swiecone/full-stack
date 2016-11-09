@@ -165,7 +165,7 @@ angular.module('confusionApp')
 
                var menufac = {};
 
-                   menufac.getDishes = function(){
+                    menufac.getDishes = function(){
                                         return dishes;
                                     };
                     menufac.getDish = function (index) {
