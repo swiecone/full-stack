@@ -2,13 +2,13 @@
 
 angular.module('confusionApp')
 
-    .controller('MenuController', ['$scope', 'menuFactory', function($scope, menuFactory) {
+  .controller('MenuController', ['$scope', 'menuFactory', function($scope, menuFactory) {
 
     $scope.tab = 1;
     $scope.filtText = '';
     $scope.showDetails = true;
 
-                  $scope.dishes= menuFactory.getDishes();
+                 $scope.dishes = menuFactory.getDishes();
 
 
                   $scope.select = function(setTab) {
@@ -64,11 +64,10 @@ angular.module('confusionApp')
   }])
 
   .controller('DishDetailController', ['$scope', 'menuFactory', function($scope, menuFactory) {
-  
-            $scope.searchText = '';
 
+            $scope.searchText = '';
             $scope.dish= menuFactory.getDish(3);
-         
+
 
             $scope.commentSearch = function(val)
                     {
@@ -76,9 +75,8 @@ angular.module('confusionApp')
                     }
 
         var now = Date();
-        var newdate = now.getDate();
+        
         console.log(now);
-        console.log(newdate);
 
             $scope.newComment = {author:" ", rating:"5",
                        comment:"",  date:""};
@@ -92,8 +90,4 @@ angular.module('confusionApp')
                        comment:"",  date:""};
             }
 
-  }])
-
-    
-
-;
+  }]);
