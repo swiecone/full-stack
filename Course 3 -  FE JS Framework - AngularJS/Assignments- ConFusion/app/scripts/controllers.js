@@ -104,6 +104,8 @@ angular.module('confusionApp')
 
           $scope.leadership = corporateFactory.getLeaders();
           console.log($scope.leadership);
+          $scope.leader = corporateFactory.getLeader();
+          console.log($scope.leader);
 
         }])
 

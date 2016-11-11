@@ -55,22 +55,18 @@
             <div class="col-xs-12 col-sm-9">
                 <h2>Corporate Leadership</h2>
                <ul class="media-list">
-					<h4>Implement the Corporate Leaders List here</h4>
-
-
                  <ul class="media-list tab-pane fade in active">
                         <li class="media" ng-repeat="leader in leadership | filter:filtText">
-                                <div class="media-left media-middle">
+                                <div class="media-left media-top">
                         <a ui-sref="app.dishdetails({id: dish._id})">
                           <img class="media-object img-thumbnail"
-                           ng-src={{dish.image}} alt="Uthappizza">
+                           ng-src={{leader.image}} alt="image">
                         </a>
                     </div>
                             <div class="media-body">
-                                <h2 class="media-heading">{{leader.name}}
-                                 <span class="label label-danger">{{dish.label}}</span>
-                                 <span class="badge" ng-show="showPrices">{{dish.price | currency : " €"}}</span></h2>
-                                    <p ng-show="showDetails">{{dish.description}}</p>                            
+                                <h2 class="media-heading">{{leader.name}} </h2>
+                                    <p><i>{{leader.designation}}</i></p>  
+                                    <p>{{leader.description}}</p>                          
                             </div>
                         </li>
                     </ul>
