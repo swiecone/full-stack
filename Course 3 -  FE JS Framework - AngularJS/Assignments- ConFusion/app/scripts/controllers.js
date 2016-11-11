@@ -98,14 +98,23 @@ angular.module('confusionApp')
             }
         }])
 
-        // implement the IndexController and About Controller here
+       // implement the IndexController and About Controller here
+
 
         .controller('AboutController', ['$scope', 'corporateFactory', function($scope,corporateFactory) {
 
           $scope.leadership = corporateFactory.getLeaders();
           console.log($scope.leadership);
-          $scope.leader = corporateFactory.getLeader();
-          console.log($scope.leader);
+
+        }])
+
+        .controller('IndexController', ['$scope',  'menuFactory', function($scope,  menuFactory) {
+            $scope.dishes= menuFactory.getDishes();
+
+            var dish= menuFactory.getDish(parseInt('0',10));
+            $scope.dish = dish;                
+          //  console.log(dish);
+
 
         }])
 
