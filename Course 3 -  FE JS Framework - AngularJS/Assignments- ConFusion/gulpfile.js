@@ -14,11 +14,14 @@
     browserSync = require('browser-sync'),
     del = require('del');
 
-	gulp.task('jshint', function() {
-	  return gulp.src('app/scripts/**/*.js')
-	  .pipe(jshint())
-	  .pipe(jshint.reporter(stylish));
-	});
+	gulp.task('usemin',['jshint'], function () {
+  return gulp.src('./app/**/*.html')
+      .pipe(usemin({
+        css:[minifycss(),rev()],
+        js: [ngannotate(),uglify(),rev()]
+      }))
+      .pipe(gulp.dest('dist/'));
+});
 
 	// Clean
 	gulp.task('clean', function() {
@@ -75,7 +78,7 @@
    browserSync.init(files, {
       server: {
          baseDir: "dist",
-         index: "menu.html"
+         index: "index.html"
       }
    });
         // Watch any files in dist/, reload on change
