@@ -39,10 +39,12 @@ angular.module('confusionApp')
                 return ($scope.tab === checkTab);
             };
     
+            $scope.showDetails = true;
             $scope.toggleDetails = function() {
                 $scope.showDetails = !$scope.showDetails;
             };
 
+             $scope.showPrices = true;
             $scope.togglePrices = function() {
                 $scope.showPrices = !$scope.showPrices;
             }
