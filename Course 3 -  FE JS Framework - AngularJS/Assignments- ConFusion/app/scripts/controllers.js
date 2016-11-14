@@ -12,7 +12,17 @@ angular.module('confusionApp')
             $scope.showMenu = true;
             $scope.message = "Loading the menu...";
 
-            $scope.dishes = menuFactory.getDishes().query();
+            $scope.dishes = menuFactory.getDishes().query(
+                function(response) {
+                    $scope.dishes = response;
+                    $scope.showMenu  = true;
+                },
+                function(response) {
+                    $scope.message = "Error: "+response.status+" "+response.statusText;
+                    console.log($scope.message);
+                    $scope.showMenu  = false;
+
+                });
                         
             $scope.select = function(setTab) {
                 $scope.tab = setTab;
@@ -83,7 +93,17 @@ angular.module('confusionApp')
              $scope.showDish = true;
              $scope.message="Loading Dish....";
 
-             $scope.dish = menuFactory.getDishes().get({id:parseInt($stateParams.id,10)});            
+             $scope.dish = menuFactory.getDishes().get({id:parseInt($stateParams.id,10)})
+              .$promise.then(
+                            function(response){
+                                $scope.dish = response;
+                                $scope.showDish = true;
+                            },
+                            function(response) {
+                                $scope.message = "Error: "+response.status + " " + response.statusText;
+                                $scope.showDish = false;
+                            }
+            );     
             
         }])
 
@@ -120,7 +140,16 @@ angular.module('confusionApp')
            $scope.showDish = true;
            $scope.message = "Special Dish loading...";  
            
-           $scope.dish = menuFactory.getDishes().get({id:0});
+           $scope.dish = menuFactory.getDishes().get({id:0})
+             .$promise.then(
+                            function(response){
+                                $scope.dish = response;
+                                $scope.showDish = true;
+                            },
+                            function(response) {
+                                $scope.message = "Error: "+response.status + " " + response.statusText;
+                                $scope.showDish = false;
+                            });
 
             var promo = menuFactory.getPromotion(parseInt('0',10));
             $scope.promo = promo;            
