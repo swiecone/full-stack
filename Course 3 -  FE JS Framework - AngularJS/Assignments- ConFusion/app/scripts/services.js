@@ -6,8 +6,6 @@ angular.module('confusionApp')
         .service('menuFactory', ['$resource','baseURL',
     function($resource,baseURL) {
 
-
-    
            var promotions = [
                 {
                           _id:0,
@@ -35,6 +33,8 @@ angular.module('confusionApp')
                  this.getPromotion = function (index) {
                                         return promotions[index];
                 };
+
+     
         }])
 
 .factory('corporateFactory', function() {
@@ -88,6 +88,7 @@ angular.module('confusionApp')
           return corpfac;
     
         })
+
 
 
 
