@@ -93,12 +93,16 @@ angular.module('confusionApp')
              $scope.showDish = true;
              $scope.newComment = {author:"", rating:"5",
                        comment:"",  date:""};
+            $scope.newComment.date = new Date().toISOString();
+
              $scope.message="Loading Dish....";
 
              $scope.dish = menuFactory.getDishes().get({id:parseInt($stateParams.id,10)})
               .$promise.then(
                             function(response){
                                 $scope.dish = response;
+                                var dish = $scope.dish;
+                                console.log(dish);
                                 $scope.showDish = true;
                             },
                             function(response) {
@@ -107,10 +111,12 @@ angular.module('confusionApp')
                             }
             );
 
-                 $scope.submitComment = function(text){
-                console.log(text);
-                $scope.dish.comments.push(text);
-                
+                 $scope.submitComment = function(newComment){
+                        $scope.newComment.date = new Date().toISOString();
+                        console.log("I got to submitComment!!");
+                        console.log(newComment);
+                        $scope.dish.comments.push(newComment);
+                        $scope.commentForm.$setPristine();
             }   
             
         }])
@@ -119,12 +125,10 @@ angular.module('confusionApp')
             
             $scope.mycomment = {rating:5, comment:"", author:"", date:""};
             
-            $scope.submitComment = function () {
+            $scope.submitComment = function (newComment) {
                 
-                $scope.mycomment.date = new Date().toISOString();
-                console.log($scope.mycomment);
                 
-                $scope.dish.comments.push($scope.mycomment);
+                $scope.dish.comments.push($scope.newComment);
                 
                 $scope.commentForm.$setPristine();
                 
