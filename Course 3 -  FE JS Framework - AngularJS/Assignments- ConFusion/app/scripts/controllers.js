@@ -91,6 +91,8 @@ angular.module('confusionApp')
         .controller('DishDetailController', ['$scope', '$stateParams', 'menuFactory', function($scope, $stateParams, menuFactory) {
 
              $scope.showDish = true;
+             $scope.newComment = {author:"", rating:"5",
+                       comment:"",  date:""};
              $scope.message="Loading Dish....";
 
              $scope.dish = menuFactory.getDishes().get({id:parseInt($stateParams.id,10)})
@@ -103,7 +105,13 @@ angular.module('confusionApp')
                                 $scope.message = "Error: "+response.status + " " + response.statusText;
                                 $scope.showDish = false;
                             }
-            );     
+            );
+
+                 $scope.submitComment = function(text){
+                console.log(text);
+                $scope.dish.comments.push(text);
+                
+            }   
             
         }])
 
