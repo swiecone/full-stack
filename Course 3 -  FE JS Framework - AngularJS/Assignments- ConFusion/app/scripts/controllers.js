@@ -111,32 +111,23 @@ angular.module('confusionApp')
                             }
             );
 
-                 $scope.submitComment = function(newComment){
-                        $scope.newComment.date = new Date().toISOString();
-                        console.log("I got to submitComment!!");
-                        console.log(newComment);
-                        $scope.dish.comments.push(newComment);
-
-                        $scope.newComment = {author:"", rating:"5",
-                        comment:"",  date:""};
-                        scope.commentForm.comment.$setPristine();
-
-
-            }   
             
         }])
 
-        .controller('DishCommentController', ['$scope', function($scope) {
+         .controller('DishCommentController', ['$scope', function($scope) {
             
             $scope.mycomment = {rating:5, comment:"", author:"", date:""};
             
-            $scope.submitComment = function (newComment) {
+            $scope.submitComment = function () {
                 
+                $scope.mycomment.date = new Date().toISOString();
+                console.log($scope.mycomment);
                 
-                $scope.dish.comments.push($scope.newComment);
+                $scope.dish.comments.push($scope.mycomment);
                 
                 $scope.commentForm.$setPristine();
                 
+                $scope.mycomment = {rating:5, comment:"", author:"", date:""};
             }
         }])
 
