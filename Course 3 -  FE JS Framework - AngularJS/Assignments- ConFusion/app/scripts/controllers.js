@@ -116,7 +116,12 @@ angular.module('confusionApp')
                         console.log("I got to submitComment!!");
                         console.log(newComment);
                         $scope.dish.comments.push(newComment);
-                        $scope.commentForm.$setPristine();
+
+                        $scope.newComment = {author:"", rating:"5",
+                        comment:"",  date:""};
+                        scope.commentForm.comment.$setPristine();
+
+
             }   
             
         }])
