@@ -1,0 +1,1423 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/Users/alexswiec/.nvm/v0.10.26/bin/node',
+1 verbose cli   '/Users/alexswiec/.nvm/v0.10.26/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'protractor',
+1 verbose cli   '-g' ]
+2 info using npm@1.4.3
+3 info using node@v0.10.26
+4 verbose cache add [ 'protractor', null ]
+5 verbose cache add name=undefined spec="protractor" args=["protractor",null]
+6 verbose parsed url { protocol: null,
+6 verbose parsed url   slashes: null,
+6 verbose parsed url   auth: null,
+6 verbose parsed url   host: null,
+6 verbose parsed url   port: null,
+6 verbose parsed url   hostname: null,
+6 verbose parsed url   hash: null,
+6 verbose parsed url   search: null,
+6 verbose parsed url   query: null,
+6 verbose parsed url   pathname: 'protractor',
+6 verbose parsed url   path: 'protractor',
+6 verbose parsed url   href: 'protractor' }
+7 silly lockFile 4f4f4858-protractor protractor
+8 verbose lock protractor /Users/alexswiec/.npm/4f4f4858-protractor.lock
+9 silly lockFile 4f4f4858-protractor protractor
+10 silly lockFile 4f4f4858-protractor protractor
+11 verbose addNamed [ 'protractor', '' ]
+12 verbose addNamed [ null, '*' ]
+13 silly lockFile 80d5ca5a-protractor protractor@
+14 verbose lock protractor@ /Users/alexswiec/.npm/80d5ca5a-protractor.lock
+15 silly addNameRange { name: 'protractor', range: '*', hasData: false }
+16 verbose url raw protractor
+17 verbose url resolving [ 'https://registry.npmjs.org/', './protractor' ]
+18 verbose url resolved https://registry.npmjs.org/protractor
+19 info trying registry request attempt 1 at 17:17:08
+20 http GET https://registry.npmjs.org/protractor
+21 http 200 https://registry.npmjs.org/protractor
+22 silly registry.get cb [ 200,
+22 silly registry.get   { server: 'nginx/1.10.1',
+22 silly registry.get     'content-type': 'application/json',
+22 silly registry.get     'last-modified': 'Wed, 16 Nov 2016 14:10:08 GMT',
+22 silly registry.get     etag: '"582c68c0-22843"',
+22 silly registry.get     'cache-control': 'max-age=300',
+22 silly registry.get     'content-length': '141379',
+22 silly registry.get     'accept-ranges': 'bytes',
+22 silly registry.get     date: 'Sat, 26 Nov 2016 16:17:08 GMT',
+22 silly registry.get     via: '1.1 varnish',
+22 silly registry.get     age: '0',
+22 silly registry.get     connection: 'keep-alive',
+22 silly registry.get     'x-served-by': 'cache-cdg8726-CDG',
+22 silly registry.get     'x-cache': 'MISS',
+22 silly registry.get     'x-cache-hits': '0',
+22 silly registry.get     'x-timer': 'S1480177028.056611,VS0,VE17',
+22 silly registry.get     vary: 'Accept-Encoding' } ]
+23 silly addNameRange number 2 { name: 'protractor', range: '*', hasData: true }
+24 silly addNameRange versions [ 'protractor',
+24 silly addNameRange   [ '0.1.0',
+24 silly addNameRange     '0.1.1',
+24 silly addNameRange     '0.1.2',
+24 silly addNameRange     '0.1.3',
+24 silly addNameRange     '0.2.0',
+24 silly addNameRange     '0.2.1',
+24 silly addNameRange     '0.3.0',
+24 silly addNameRange     '0.4.0',
+24 silly addNameRange     '0.4.1',
+24 silly addNameRange     '0.5.0',
+24 silly addNameRange     '0.6.1',
+24 silly addNameRange     '0.7.0',
+24 silly addNameRange     '0.8.0',
+24 silly addNameRange     '0.9.0',
+24 silly addNameRange     '0.10.0',
+24 silly addNameRange     '0.11.0',
+24 silly addNameRange     '0.12.0',
+24 silly addNameRange     '0.12.1',
+24 silly addNameRange     '0.13.0',
+24 silly addNameRange     '0.14.0',
+24 silly addNameRange     '0.15.0',
+24 silly addNameRange     '0.16.0',
+24 silly addNameRange     '0.16.1',
+24 silly addNameRange     '0.17.0',
+24 silly addNameRange     '0.18.0',
+24 silly addNameRange     '0.18.1',
+24 silly addNameRange     '0.19.0',
+24 silly addNameRange     '0.20.0',
+24 silly addNameRange     '0.20.1',
+24 silly addNameRange     '0.21.0',
+24 silly addNameRange     '0.22.0',
+24 silly addNameRange     '0.23.0',
+24 silly addNameRange     '0.23.1',
+24 silly addNameRange     '0.24.0',
+24 silly addNameRange     '0.24.1',
+24 silly addNameRange     '0.24.2',
+24 silly addNameRange     '1.0.0-rc1',
+24 silly addNameRange     '1.0.0-rc2',
+24 silly addNameRange     '1.0.0-rc3',
+24 silly addNameRange     '1.0.0-rc4',
+24 silly addNameRange     '1.0.0-rc5',
+24 silly addNameRange     '1.0.0-rc6',
+24 silly addNameRange     '1.0.0',
+24 silly addNameRange     '1.1.0',
+24 silly addNameRange     '1.1.1',
+24 silly addNameRange     '1.2.0-beta1',
+24 silly addNameRange     '1.2.0',
+24 silly addNameRange     '1.3.0',
+24 silly addNameRange     '1.3.1',
+24 silly addNameRange     '1.4.0',
+24 silly addNameRange     '1.5.0',
+24 silly addNameRange     '1.6.0',
+24 silly addNameRange     '1.6.1',
+24 silly addNameRange     '1.7.0',
+24 silly addNameRange     '1.8.0',
+24 silly addNameRange     '2.0.0',
+24 silly addNameRange     '2.1.0',
+24 silly addNameRange     '2.2.0',
+24 silly addNameRange     '2.3.0',
+24 silly addNameRange     '2.4.0',
+24 silly addNameRange     '2.5.0',
+24 silly addNameRange     '2.5.1',
+24 silly addNameRange     '3.0.0',
+24 silly addNameRange     '3.1.0',
+24 silly addNameRange     '3.1.1',
+24 silly addNameRange     '3.2.0',
+24 silly addNameRange     '3.2.1',
+24 silly addNameRange     '3.2.2',
+24 silly addNameRange     '0.0.0',
+24 silly addNameRange     '3.3.0',
+24 silly addNameRange     '4.0.0',
+24 silly addNameRange     '4.0.1',
+24 silly addNameRange     '4.0.2',
+24 silly addNameRange     '4.0.3',
+24 silly addNameRange     '4.0.4',
+24 silly addNameRange     '4.0.5',
+24 silly addNameRange     '4.0.6',
+24 silly addNameRange     '4.0.7',
+24 silly addNameRange     '4.0.8',
+24 silly addNameRange     '4.0.9',
+24 silly addNameRange     '4.0.10',
+24 silly addNameRange     '4.0.11' ] ]
+25 verbose addNamed [ 'protractor', '4.0.11' ]
+26 verbose addNamed [ '4.0.11', '4.0.11' ]
+27 silly lockFile 37f34bdb-protractor-4-0-11 protractor@4.0.11
+28 verbose lock protractor@4.0.11 /Users/alexswiec/.npm/37f34bdb-protractor-4-0-11.lock
+29 silly lockFile 9198c8f8-protractor-protractor-4-0-11-tgz https://registry.npmjs.org/protractor/-/protractor-4.0.11.tgz
+30 verbose lock https://registry.npmjs.org/protractor/-/protractor-4.0.11.tgz /Users/alexswiec/.npm/9198c8f8-protractor-protractor-4-0-11-tgz.lock
+31 verbose addRemoteTarball [ 'https://registry.npmjs.org/protractor/-/protractor-4.0.11.tgz',
+31 verbose addRemoteTarball   'fc4bf8d75deec8516b600f87ea5b95ecf537d059' ]
+32 info retry fetch attempt 1 at 17:17:08
+33 verbose fetch to= /Users/alexswiec/tmp/npm-1387-r9sCwfVd/1480177028713-0.10009612492285669/tmp.tgz
+34 http GET https://registry.npmjs.org/protractor/-/protractor-4.0.11.tgz
+35 http 200 https://registry.npmjs.org/protractor/-/protractor-4.0.11.tgz
+36 verbose tar unpack /Users/alexswiec/tmp/npm-1387-r9sCwfVd/1480177028713-0.10009612492285669/tmp.tgz
+37 silly lockFile 72e72798-8713-0-10009612492285669-package tar:///Users/alexswiec/tmp/npm-1387-r9sCwfVd/1480177028713-0.10009612492285669/package
+38 verbose lock tar:///Users/alexswiec/tmp/npm-1387-r9sCwfVd/1480177028713-0.10009612492285669/package /Users/alexswiec/.npm/72e72798-8713-0-10009612492285669-package.lock
+39 silly lockFile 8c02b97f-8713-0-10009612492285669-tmp-tgz tar:///Users/alexswiec/tmp/npm-1387-r9sCwfVd/1480177028713-0.10009612492285669/tmp.tgz
+40 verbose lock tar:///Users/alexswiec/tmp/npm-1387-r9sCwfVd/1480177028713-0.10009612492285669/tmp.tgz /Users/alexswiec/.npm/8c02b97f-8713-0-10009612492285669-tmp-tgz.lock
+41 silly gunzTarPerm modes [ '755', '644' ]
+42 silly gunzTarPerm extractEntry package.json
+43 silly gunzTarPerm extractEntry README.md
+44 silly gunzTarPerm extractEntry LICENSE
+45 silly gunzTarPerm extractEntry gulpfile.js
+46 silly gunzTarPerm extractEntry restart_test.js
+47 silly gunzTarPerm extractEntry CHANGELOG.md
+48 silly gunzTarPerm extractEntry CONTRIBUTING.md
+49 silly gunzTarPerm extractEntry benchmark_bisect.sh
+50 silly gunzTarPerm extractEntry bin/elementexplorer.js
+51 silly gunzTarPerm extractEntry bin/protractor
+52 silly gunzTarPerm extractEntry bin/webdriver-manager
+53 silly gunzTarPerm extractEntry built/util.js
+54 silly gunzTarPerm extractEntry built/element.js
+55 silly gunzTarPerm extractEntry built/exitCodes.js
+56 silly gunzTarPerm extractEntry built/expectedConditions.js
+57 silly gunzTarPerm extractEntry built/index.js
+58 silly gunzTarPerm extractEntry built/debugger.js
+59 silly gunzTarPerm extractEntry built/locators.js
+60 silly gunzTarPerm extractEntry built/logger.js
+61 silly gunzTarPerm extractEntry built/main.js
+62 silly gunzTarPerm extractEntry built/plugins.js
+63 silly gunzTarPerm extractEntry built/ptor.js
+64 silly gunzTarPerm extractEntry built/configParser.js
+65 silly gunzTarPerm extractEntry built/runner.js
+66 silly gunzTarPerm extractEntry built/config.js
+67 silly gunzTarPerm extractEntry built/runnerCli.js
+68 silly gunzTarPerm extractEntry built/clientsidescripts.js
+69 silly gunzTarPerm extractEntry built/taskLogger.js
+70 silly gunzTarPerm extractEntry built/cli.js
+71 silly gunzTarPerm extractEntry built/taskRunner.js
+72 silly gunzTarPerm extractEntry built/browser.js
+73 silly gunzTarPerm extractEntry built/taskScheduler.js
+74 silly gunzTarPerm extractEntry built/launcher.js
+75 silly gunzTarPerm extractEntry built/debugger/debuggerCommons.js
+76 silly gunzTarPerm extractEntry built/debugger/clients/explorer.js
+77 silly gunzTarPerm extractEntry built/debugger/clients/wddebugger.js
+78 silly gunzTarPerm extractEntry built/debugger/modes/commandRepl.js
+79 silly gunzTarPerm extractEntry built/debugger/modes/debuggerRepl.js
+80 silly gunzTarPerm extractEntry built/launcher.d.ts
+81 silly gunzTarPerm extractEntry built/debugger.d.ts
+82 silly gunzTarPerm extractEntry built/browser.d.ts
+83 silly gunzTarPerm extractEntry built/locators.d.ts
+84 silly gunzTarPerm extractEntry built/config.d.ts
+85 silly gunzTarPerm extractEntry built/logger.d.ts
+86 silly gunzTarPerm extractEntry built/driverProviders/README.md
+87 silly gunzTarPerm extractEntry built/driverProviders/attachSession.js
+88 silly gunzTarPerm extractEntry built/driverProviders/mock.js
+89 silly gunzTarPerm extractEntry built/driverProviders/browserStack.js
+90 silly gunzTarPerm extractEntry built/driverProviders/local.js
+91 silly gunzTarPerm extractEntry built/driverProviders/direct.js
+92 silly gunzTarPerm extractEntry built/driverProviders/index.js
+93 silly gunzTarPerm extractEntry built/driverProviders/driverProvider.js
+94 silly gunzTarPerm extractEntry built/driverProviders/hosted.js
+95 silly gunzTarPerm extractEntry built/driverProviders/sauce.js
+96 silly gunzTarPerm extractEntry built/driverProviders/attachSession.d.ts
+97 silly gunzTarPerm extractEntry built/driverProviders/index.d.ts
+98 silly gunzTarPerm extractEntry built/driverProviders/driverProvider.d.ts
+99 silly gunzTarPerm extractEntry built/driverProviders/local.d.ts
+100 silly gunzTarPerm extractEntry built/driverProviders/direct.d.ts
+101 silly gunzTarPerm extractEntry built/driverProviders/mock.d.ts
+102 silly gunzTarPerm extractEntry built/driverProviders/browserStack.d.ts
+103 silly gunzTarPerm extractEntry built/driverProviders/sauce.d.ts
+104 silly gunzTarPerm extractEntry built/driverProviders/hosted.d.ts
+105 silly gunzTarPerm extractEntry built/main.d.ts
+106 silly gunzTarPerm extractEntry built/element.d.ts
+107 silly gunzTarPerm extractEntry built/plugins.d.ts
+108 silly gunzTarPerm extractEntry built/ambient.d.ts
+109 silly gunzTarPerm extractEntry built/ptor.d.ts
+110 silly gunzTarPerm extractEntry built/exitCodes.d.ts
+111 silly gunzTarPerm extractEntry built/runner.d.ts
+112 silly gunzTarPerm extractEntry built/configParser.d.ts
+113 silly gunzTarPerm extractEntry built/runnerCli.d.ts
+114 silly gunzTarPerm extractEntry built/expectedConditions.d.ts
+115 silly gunzTarPerm extractEntry built/selenium-webdriver/locators.js
+116 silly gunzTarPerm extractEntry built/selenium-webdriver/webdriver.js
+117 silly gunzTarPerm extractEntry built/spec/install/node_modules/protractor/exampleTypescript/angularPage.js
+118 silly gunzTarPerm extractEntry built/spec/install/node_modules/protractor/exampleTypescript/conf.js
+119 silly gunzTarPerm extractEntry built/spec/install/node_modules/protractor/exampleTypescript/confPageObjects.js
+120 silly gunzTarPerm extractEntry built/spec/install/node_modules/protractor/exampleTypescript/plugins.js
+121 silly gunzTarPerm extractEntry built/spec/install/node_modules/protractor/exampleTypescript/spec.js
+122 silly gunzTarPerm extractEntry built/spec/install/node_modules/protractor/exampleTypescript/specPageObjects.js
+123 silly gunzTarPerm extractEntry built/spec/install/node_modules/protractor/exampleTypescript/asyncAwait/conf.js
+124 silly gunzTarPerm extractEntry built/spec/install/node_modules/protractor/exampleTypescript/asyncAwait/spec.js
+125 silly gunzTarPerm extractEntry built/taskLogger.d.ts
+126 silly gunzTarPerm extractEntry built/cli.d.ts
+127 silly gunzTarPerm extractEntry built/taskRunner.d.ts
+128 silly gunzTarPerm extractEntry built/frameworks/README.md
+129 silly gunzTarPerm extractEntry built/frameworks/debugprint.js
+130 silly gunzTarPerm extractEntry built/frameworks/explorer.js
+131 silly gunzTarPerm extractEntry built/frameworks/jasmine.js
+132 silly gunzTarPerm extractEntry built/frameworks/mocha.js
+133 silly gunzTarPerm extractEntry built/taskScheduler.d.ts
+134 silly gunzTarPerm extractEntry built/index.d.ts
+135 silly gunzTarPerm extractEntry built/util.d.ts
+136 silly gunzTarPerm extractEntry built/lib/browser.js
+137 silly gunzTarPerm extractEntry built/lib/exitCodes.js
+138 silly gunzTarPerm extractEntry built/lib/expectedConditions.js
+139 silly gunzTarPerm extractEntry built/lib/launcher.js
+140 silly gunzTarPerm extractEntry built/lib/element.js
+141 silly gunzTarPerm extractEntry built/lib/cli.js
+142 silly gunzTarPerm extractEntry built/lib/main.js
+143 silly gunzTarPerm extractEntry built/lib/plugins.js
+144 silly gunzTarPerm extractEntry built/lib/ptor.js
+145 silly gunzTarPerm extractEntry built/lib/runner.js
+146 silly gunzTarPerm extractEntry built/lib/taskScheduler.js
+147 silly gunzTarPerm extractEntry built/lib/runnerCli.js
+148 silly gunzTarPerm extractEntry built/lib/configParser.js
+149 silly gunzTarPerm extractEntry built/lib/taskLogger.js
+150 silly gunzTarPerm extractEntry built/lib/config.js
+151 silly gunzTarPerm extractEntry built/lib/taskRunner.js
+152 silly gunzTarPerm extractEntry built/lib/locators.js
+153 silly gunzTarPerm extractEntry built/lib/util.js
+154 silly gunzTarPerm extractEntry built/lib/logger.js
+155 silly gunzTarPerm extractEntry built/lib/driverProviders/attachSession.js
+156 silly gunzTarPerm extractEntry built/lib/driverProviders/browserStack.js
+157 silly gunzTarPerm extractEntry built/lib/driverProviders/direct.js
+158 silly gunzTarPerm extractEntry built/lib/driverProviders/driverProvider.js
+159 silly gunzTarPerm extractEntry built/lib/driverProviders/hosted.js
+160 silly gunzTarPerm extractEntry built/lib/driverProviders/index.js
+161 silly gunzTarPerm extractEntry built/lib/driverProviders/local.js
+162 silly gunzTarPerm extractEntry built/lib/driverProviders/mock.js
+163 silly gunzTarPerm extractEntry built/lib/driverProviders/sauce.js
+164 silly gunzTarPerm extractEntry circle.yml
+165 silly gunzTarPerm extractEntry example/conf.js
+166 silly gunzTarPerm extractEntry example/example_spec.js
+167 silly gunzTarPerm extractEntry exampleTypescript/package.json
+168 silly gunzTarPerm extractEntry exampleTypescript/README.md
+169 silly gunzTarPerm extractEntry exampleTypescript/angularPage.ts
+170 silly gunzTarPerm extractEntry exampleTypescript/asyncAwait/README.md
+171 silly gunzTarPerm extractEntry exampleTypescript/asyncAwait/conf.ts
+172 silly gunzTarPerm extractEntry exampleTypescript/asyncAwait/spec.ts
+173 silly gunzTarPerm extractEntry exampleTypescript/conf.ts
+174 silly gunzTarPerm extractEntry exampleTypescript/confPageObjects.ts
+175 silly gunzTarPerm extractEntry exampleTypescript/plugins.ts
+176 silly gunzTarPerm extractEntry exampleTypescript/spec.ts
+177 silly gunzTarPerm extractEntry exampleTypescript/specPageObjects.ts
+178 silly gunzTarPerm extractEntry exampleTypescript/tsconfig.json
+179 silly gunzTarPerm extractEntry .idea/codeStyleSettings.xml
+180 silly gunzTarPerm extractEntry .idea/jsLibraryMappings.xml
+181 silly gunzTarPerm extractEntry .idea/modules.xml
+182 silly gunzTarPerm extractEntry .idea/protractor.iml
+183 silly gunzTarPerm extractEntry .idea/typescript-compiler.xml
+184 silly gunzTarPerm extractEntry .idea/vcs.xml
+185 silly gunzTarPerm extractEntry .idea/workspace.xml
+186 silly gunzTarPerm extractEntry tsconfig.json
+187 silly gunzTarPerm extractEntry .clang-format
+188 silly lockFile 72e72798-8713-0-10009612492285669-package tar:///Users/alexswiec/tmp/npm-1387-r9sCwfVd/1480177028713-0.10009612492285669/package
+189 silly lockFile 72e72798-8713-0-10009612492285669-package tar:///Users/alexswiec/tmp/npm-1387-r9sCwfVd/1480177028713-0.10009612492285669/package
+190 silly lockFile 8c02b97f-8713-0-10009612492285669-tmp-tgz tar:///Users/alexswiec/tmp/npm-1387-r9sCwfVd/1480177028713-0.10009612492285669/tmp.tgz
+191 silly lockFile 8c02b97f-8713-0-10009612492285669-tmp-tgz tar:///Users/alexswiec/tmp/npm-1387-r9sCwfVd/1480177028713-0.10009612492285669/tmp.tgz
+192 verbose tar pack [ '/Users/alexswiec/.npm/protractor/4.0.11/package.tgz',
+192 verbose tar pack   '/Users/alexswiec/tmp/npm-1387-r9sCwfVd/1480177028713-0.10009612492285669/package' ]
+193 verbose tarball /Users/alexswiec/.npm/protractor/4.0.11/package.tgz
+194 verbose folder /Users/alexswiec/tmp/npm-1387-r9sCwfVd/1480177028713-0.10009612492285669/package
+195 silly lockFile 72e72798-8713-0-10009612492285669-package tar:///Users/alexswiec/tmp/npm-1387-r9sCwfVd/1480177028713-0.10009612492285669/package
+196 verbose lock tar:///Users/alexswiec/tmp/npm-1387-r9sCwfVd/1480177028713-0.10009612492285669/package /Users/alexswiec/.npm/72e72798-8713-0-10009612492285669-package.lock
+197 silly lockFile 014a5b6f-pm-protractor-4-0-11-package-tgz tar:///Users/alexswiec/.npm/protractor/4.0.11/package.tgz
+198 verbose lock tar:///Users/alexswiec/.npm/protractor/4.0.11/package.tgz /Users/alexswiec/.npm/014a5b6f-pm-protractor-4-0-11-package-tgz.lock
+199 silly lockFile 72e72798-8713-0-10009612492285669-package tar:///Users/alexswiec/tmp/npm-1387-r9sCwfVd/1480177028713-0.10009612492285669/package
+200 silly lockFile 72e72798-8713-0-10009612492285669-package tar:///Users/alexswiec/tmp/npm-1387-r9sCwfVd/1480177028713-0.10009612492285669/package
+201 silly lockFile 014a5b6f-pm-protractor-4-0-11-package-tgz tar:///Users/alexswiec/.npm/protractor/4.0.11/package.tgz
+202 silly lockFile 014a5b6f-pm-protractor-4-0-11-package-tgz tar:///Users/alexswiec/.npm/protractor/4.0.11/package.tgz
+203 silly lockFile e15e65ae-ec-npm-protractor-4-0-11-package /Users/alexswiec/.npm/protractor/4.0.11/package
+204 verbose lock /Users/alexswiec/.npm/protractor/4.0.11/package /Users/alexswiec/.npm/e15e65ae-ec-npm-protractor-4-0-11-package.lock
+205 silly lockFile e15e65ae-ec-npm-protractor-4-0-11-package /Users/alexswiec/.npm/protractor/4.0.11/package
+206 silly lockFile e15e65ae-ec-npm-protractor-4-0-11-package /Users/alexswiec/.npm/protractor/4.0.11/package
+207 verbose tar unpack /Users/alexswiec/.npm/protractor/4.0.11/package.tgz
+208 silly lockFile 91be0bcd-ec-npm-protractor-4-0-11-package tar:///Users/alexswiec/.npm/protractor/4.0.11/package
+209 verbose lock tar:///Users/alexswiec/.npm/protractor/4.0.11/package /Users/alexswiec/.npm/91be0bcd-ec-npm-protractor-4-0-11-package.lock
+210 silly lockFile 014a5b6f-pm-protractor-4-0-11-package-tgz tar:///Users/alexswiec/.npm/protractor/4.0.11/package.tgz
+211 verbose lock tar:///Users/alexswiec/.npm/protractor/4.0.11/package.tgz /Users/alexswiec/.npm/014a5b6f-pm-protractor-4-0-11-package-tgz.lock
+212 silly gunzTarPerm modes [ '755', '644' ]
+213 silly gunzTarPerm extractEntry package.json
+214 silly gunzTarPerm extractEntry README.md
+215 silly gunzTarPerm extractEntry LICENSE
+216 silly gunzTarPerm extractEntry gulpfile.js
+217 silly gunzTarPerm extractEntry restart_test.js
+218 silly gunzTarPerm extractEntry built/util.js
+219 silly gunzTarPerm extractEntry built/element.js
+220 silly gunzTarPerm extractEntry built/exitCodes.js
+221 silly gunzTarPerm extractEntry built/expectedConditions.js
+222 silly gunzTarPerm extractEntry built/index.js
+223 silly gunzTarPerm extractEntry built/debugger.js
+224 silly gunzTarPerm extractEntry built/locators.js
+225 silly gunzTarPerm extractEntry built/logger.js
+226 silly gunzTarPerm extractEntry built/main.js
+227 silly gunzTarPerm extractEntry built/plugins.js
+228 silly gunzTarPerm extractEntry built/ptor.js
+229 silly gunzTarPerm extractEntry built/configParser.js
+230 silly gunzTarPerm extractEntry built/runner.js
+231 silly gunzTarPerm extractEntry built/config.js
+232 silly gunzTarPerm extractEntry built/runnerCli.js
+233 silly gunzTarPerm extractEntry built/clientsidescripts.js
+234 silly gunzTarPerm extractEntry built/taskLogger.js
+235 silly gunzTarPerm extractEntry built/cli.js
+236 silly gunzTarPerm extractEntry built/taskRunner.js
+237 silly gunzTarPerm extractEntry built/browser.js
+238 silly gunzTarPerm extractEntry built/taskScheduler.js
+239 silly gunzTarPerm extractEntry built/launcher.js
+240 silly gunzTarPerm extractEntry built/debugger/debuggerCommons.js
+241 silly gunzTarPerm extractEntry built/debugger/clients/explorer.js
+242 silly gunzTarPerm extractEntry built/debugger/clients/wddebugger.js
+243 silly gunzTarPerm extractEntry built/debugger/modes/commandRepl.js
+244 silly gunzTarPerm extractEntry built/debugger/modes/debuggerRepl.js
+245 silly gunzTarPerm extractEntry built/launcher.d.ts
+246 silly gunzTarPerm extractEntry built/debugger.d.ts
+247 silly gunzTarPerm extractEntry built/browser.d.ts
+248 silly gunzTarPerm extractEntry built/locators.d.ts
+249 silly gunzTarPerm extractEntry built/config.d.ts
+250 silly gunzTarPerm extractEntry built/logger.d.ts
+251 silly gunzTarPerm extractEntry built/driverProviders/README.md
+252 silly gunzTarPerm extractEntry built/driverProviders/attachSession.js
+253 silly gunzTarPerm extractEntry built/driverProviders/mock.js
+254 silly gunzTarPerm extractEntry built/driverProviders/browserStack.js
+255 silly gunzTarPerm extractEntry built/driverProviders/local.js
+256 silly gunzTarPerm extractEntry built/driverProviders/direct.js
+257 silly gunzTarPerm extractEntry built/driverProviders/index.js
+258 silly gunzTarPerm extractEntry built/driverProviders/driverProvider.js
+259 silly gunzTarPerm extractEntry built/driverProviders/hosted.js
+260 silly gunzTarPerm extractEntry built/driverProviders/sauce.js
+261 silly gunzTarPerm extractEntry built/driverProviders/attachSession.d.ts
+262 silly gunzTarPerm extractEntry built/driverProviders/index.d.ts
+263 silly gunzTarPerm extractEntry built/driverProviders/driverProvider.d.ts
+264 silly gunzTarPerm extractEntry built/driverProviders/local.d.ts
+265 silly gunzTarPerm extractEntry built/driverProviders/direct.d.ts
+266 silly gunzTarPerm extractEntry built/driverProviders/mock.d.ts
+267 silly gunzTarPerm extractEntry built/driverProviders/browserStack.d.ts
+268 silly gunzTarPerm extractEntry built/driverProviders/sauce.d.ts
+269 silly gunzTarPerm extractEntry built/driverProviders/hosted.d.ts
+270 silly gunzTarPerm extractEntry built/main.d.ts
+271 silly gunzTarPerm extractEntry built/element.d.ts
+272 silly gunzTarPerm extractEntry built/plugins.d.ts
+273 silly gunzTarPerm extractEntry built/ambient.d.ts
+274 silly gunzTarPerm extractEntry built/ptor.d.ts
+275 silly gunzTarPerm extractEntry built/exitCodes.d.ts
+276 silly gunzTarPerm extractEntry built/runner.d.ts
+277 silly gunzTarPerm extractEntry built/configParser.d.ts
+278 silly gunzTarPerm extractEntry built/runnerCli.d.ts
+279 silly gunzTarPerm extractEntry built/expectedConditions.d.ts
+280 silly gunzTarPerm extractEntry built/selenium-webdriver/locators.js
+281 silly gunzTarPerm extractEntry built/selenium-webdriver/webdriver.js
+282 silly gunzTarPerm extractEntry built/spec/install/node_modules/protractor/exampleTypescript/angularPage.js
+283 silly gunzTarPerm extractEntry built/spec/install/node_modules/protractor/exampleTypescript/conf.js
+284 silly gunzTarPerm extractEntry built/spec/install/node_modules/protractor/exampleTypescript/confPageObjects.js
+285 silly gunzTarPerm extractEntry built/spec/install/node_modules/protractor/exampleTypescript/plugins.js
+286 silly gunzTarPerm extractEntry built/spec/install/node_modules/protractor/exampleTypescript/spec.js
+287 silly gunzTarPerm extractEntry built/spec/install/node_modules/protractor/exampleTypescript/specPageObjects.js
+288 silly gunzTarPerm extractEntry built/spec/install/node_modules/protractor/exampleTypescript/asyncAwait/conf.js
+289 silly gunzTarPerm extractEntry built/spec/install/node_modules/protractor/exampleTypescript/asyncAwait/spec.js
+290 silly gunzTarPerm extractEntry built/taskLogger.d.ts
+291 silly gunzTarPerm extractEntry built/cli.d.ts
+292 silly gunzTarPerm extractEntry built/taskRunner.d.ts
+293 silly gunzTarPerm extractEntry built/frameworks/README.md
+294 silly gunzTarPerm extractEntry built/frameworks/debugprint.js
+295 silly gunzTarPerm extractEntry built/frameworks/explorer.js
+296 silly gunzTarPerm extractEntry built/frameworks/jasmine.js
+297 silly gunzTarPerm extractEntry built/frameworks/mocha.js
+298 silly gunzTarPerm extractEntry built/taskScheduler.d.ts
+299 silly gunzTarPerm extractEntry built/index.d.ts
+300 silly gunzTarPerm extractEntry built/util.d.ts
+301 silly gunzTarPerm extractEntry built/lib/browser.js
+302 silly gunzTarPerm extractEntry built/lib/exitCodes.js
+303 silly gunzTarPerm extractEntry built/lib/expectedConditions.js
+304 silly gunzTarPerm extractEntry built/lib/launcher.js
+305 silly gunzTarPerm extractEntry built/lib/element.js
+306 silly gunzTarPerm extractEntry built/lib/cli.js
+307 silly gunzTarPerm extractEntry built/lib/main.js
+308 silly gunzTarPerm extractEntry built/lib/plugins.js
+309 silly gunzTarPerm extractEntry built/lib/ptor.js
+310 silly gunzTarPerm extractEntry built/lib/runner.js
+311 silly gunzTarPerm extractEntry built/lib/taskScheduler.js
+312 silly gunzTarPerm extractEntry built/lib/runnerCli.js
+313 silly gunzTarPerm extractEntry built/lib/configParser.js
+314 silly gunzTarPerm extractEntry built/lib/taskLogger.js
+315 silly gunzTarPerm extractEntry built/lib/config.js
+316 silly gunzTarPerm extractEntry built/lib/taskRunner.js
+317 silly gunzTarPerm extractEntry built/lib/locators.js
+318 silly gunzTarPerm extractEntry built/lib/util.js
+319 silly gunzTarPerm extractEntry built/lib/logger.js
+320 silly gunzTarPerm extractEntry built/lib/driverProviders/attachSession.js
+321 silly gunzTarPerm extractEntry built/lib/driverProviders/browserStack.js
+322 silly gunzTarPerm extractEntry built/lib/driverProviders/direct.js
+323 silly gunzTarPerm extractEntry built/lib/driverProviders/driverProvider.js
+324 silly gunzTarPerm extractEntry built/lib/driverProviders/hosted.js
+325 silly gunzTarPerm extractEntry built/lib/driverProviders/index.js
+326 silly gunzTarPerm extractEntry built/lib/driverProviders/local.js
+327 silly gunzTarPerm extractEntry built/lib/driverProviders/mock.js
+328 silly gunzTarPerm extractEntry built/lib/driverProviders/sauce.js
+329 silly gunzTarPerm extractEntry benchmark_bisect.sh
+330 silly gunzTarPerm extractEntry bin/elementexplorer.js
+331 silly gunzTarPerm extractEntry bin/protractor
+332 silly gunzTarPerm extractEntry bin/webdriver-manager
+333 silly gunzTarPerm extractEntry .idea/codeStyleSettings.xml
+334 silly gunzTarPerm extractEntry .idea/jsLibraryMappings.xml
+335 silly gunzTarPerm extractEntry .idea/modules.xml
+336 silly gunzTarPerm extractEntry .idea/protractor.iml
+337 silly gunzTarPerm extractEntry .idea/typescript-compiler.xml
+338 silly gunzTarPerm extractEntry .idea/vcs.xml
+339 silly gunzTarPerm extractEntry .idea/workspace.xml
+340 silly gunzTarPerm extractEntry circle.yml
+341 silly gunzTarPerm extractEntry example/conf.js
+342 silly gunzTarPerm extractEntry example/example_spec.js
+343 silly gunzTarPerm extractEntry exampleTypescript/package.json
+344 silly gunzTarPerm extractEntry exampleTypescript/README.md
+345 silly gunzTarPerm extractEntry exampleTypescript/angularPage.ts
+346 silly gunzTarPerm extractEntry exampleTypescript/asyncAwait/README.md
+347 silly gunzTarPerm extractEntry exampleTypescript/asyncAwait/conf.ts
+348 silly gunzTarPerm extractEntry exampleTypescript/asyncAwait/spec.ts
+349 silly gunzTarPerm extractEntry exampleTypescript/conf.ts
+350 silly gunzTarPerm extractEntry exampleTypescript/confPageObjects.ts
+351 silly gunzTarPerm extractEntry exampleTypescript/plugins.ts
+352 silly gunzTarPerm extractEntry exampleTypescript/spec.ts
+353 silly gunzTarPerm extractEntry exampleTypescript/specPageObjects.ts
+354 silly gunzTarPerm extractEntry exampleTypescript/tsconfig.json
+355 silly gunzTarPerm extractEntry CONTRIBUTING.md
+356 silly gunzTarPerm extractEntry .clang-format
+357 silly gunzTarPerm extractEntry CHANGELOG.md
+358 silly gunzTarPerm extractEntry tsconfig.json
+359 silly lockFile 91be0bcd-ec-npm-protractor-4-0-11-package tar:///Users/alexswiec/.npm/protractor/4.0.11/package
+360 silly lockFile 91be0bcd-ec-npm-protractor-4-0-11-package tar:///Users/alexswiec/.npm/protractor/4.0.11/package
+361 silly lockFile 014a5b6f-pm-protractor-4-0-11-package-tgz tar:///Users/alexswiec/.npm/protractor/4.0.11/package.tgz
+362 silly lockFile 014a5b6f-pm-protractor-4-0-11-package-tgz tar:///Users/alexswiec/.npm/protractor/4.0.11/package.tgz
+363 verbose chmod /Users/alexswiec/.npm/protractor/4.0.11/package.tgz 644
+364 verbose chown /Users/alexswiec/.npm/protractor/4.0.11/package.tgz [ 501, 20 ]
+365 silly lockFile 9198c8f8-protractor-protractor-4-0-11-tgz https://registry.npmjs.org/protractor/-/protractor-4.0.11.tgz
+366 silly lockFile 9198c8f8-protractor-protractor-4-0-11-tgz https://registry.npmjs.org/protractor/-/protractor-4.0.11.tgz
+367 silly lockFile 37f34bdb-protractor-4-0-11 protractor@4.0.11
+368 silly lockFile 37f34bdb-protractor-4-0-11 protractor@4.0.11
+369 silly lockFile 80d5ca5a-protractor protractor@
+370 silly lockFile 80d5ca5a-protractor protractor@
+371 silly resolved [ { name: 'protractor',
+371 silly resolved     description: 'Webdriver E2E test wrapper for Angular.',
+371 silly resolved     homepage: 'https://github.com/angular/protractor',
+371 silly resolved     keywords:
+371 silly resolved      [ 'angular',
+371 silly resolved        'test',
+371 silly resolved        'testing',
+371 silly resolved        'webdriver',
+371 silly resolved        'webdriverjs',
+371 silly resolved        'selenium' ],
+371 silly resolved     author: { name: 'Julie Ralph', email: 'ju.ralph@gmail.com' },
+371 silly resolved     dependencies:
+371 silly resolved      { '@types/jasmine': '^2.5.36',
+371 silly resolved        '@types/node': '^6.0.46',
+371 silly resolved        '@types/q': '^0.0.32',
+371 silly resolved        '@types/selenium-webdriver': '~2.53.31',
+371 silly resolved        'adm-zip': '0.4.7',
+371 silly resolved        chalk: '^1.1.3',
+371 silly resolved        glob: '^7.0.3',
+371 silly resolved        jasmine: '2.4.1',
+371 silly resolved        jasminewd2: '0.0.10',
+371 silly resolved        optimist: '~0.6.0',
+371 silly resolved        q: '1.4.1',
+371 silly resolved        saucelabs: '~1.3.0',
+371 silly resolved        'selenium-webdriver': '2.53.3',
+371 silly resolved        'source-map-support': '~0.4.0',
+371 silly resolved        'webdriver-manager': '^10.2.8' },
+371 silly resolved     devDependencies:
+371 silly resolved      { '@types/chalk': '^0.4.28',
+371 silly resolved        '@types/glob': '^5.0.29',
+371 silly resolved        '@types/minimatch': '^2.0.28',
+371 silly resolved        '@types/minimist': '^1.1.28',
+371 silly resolved        '@types/optimist': '^0.0.29',
+371 silly resolved        'body-parser': '~1.15.2',
+371 silly resolved        chai: '~3.5.0',
+371 silly resolved        'chai-as-promised': '~5.3.0',
+371 silly resolved        'clang-format': '^1.0.34',
+371 silly resolved        'expect.js': '~0.3.1',
+371 silly resolved        express: '~4.14.0',
+371 silly resolved        gulp: '^3.9.1',
+371 silly resolved        'gulp-clang-format': '^1.0.23',
+371 silly resolved        jshint: '^2.9.2',
+371 silly resolved        lodash: '^4.5.1',
+371 silly resolved        marked: '^0.3.3',
+371 silly resolved        mocha: '2.5.3',
+371 silly resolved        rimraf: '~2.5.3',
+371 silly resolved        'run-sequence': '^1.1.5',
+371 silly resolved        semver: '^5.3.0',
+371 silly resolved        typescript: '^2.0.0' },
+371 silly resolved     repository: { type: 'git', url: 'git://github.com/angular/protractor.git' },
+371 silly resolved     bin:
+371 silly resolved      { protractor: 'bin/protractor',
+371 silly resolved        'webdriver-manager': 'bin/webdriver-manager' },
+371 silly resolved     main: 'built/index.js',
+371 silly resolved     typings: 'built/index.d.ts',
+371 silly resolved     scripts:
+371 silly resolved      { prepublish: 'gulp prepublish',
+371 silly resolved        pretest: 'gulp pretest',
+371 silly resolved        start: 'node testapp/scripts/web-server.js',
+371 silly resolved        test: 'node scripts/test.js',
+371 silly resolved        install_testapp: 'cd testapp && npm install',
+371 silly resolved        tsc: './node_modules/typescript/bin/tsc',
+371 silly resolved        'tsc:w': './node_modules/typescript/bin/tsc -w' },
+371 silly resolved     license: 'MIT',
+371 silly resolved     engines: { node: '>=4.2.x' },
+371 silly resolved     version: '4.0.11',
+371 silly resolved     readme: 'Protractor [![Build Status](https://travis-ci.org/angular/protractor.svg?branch=master)](https://travis-ci.org/angular/protractor) [![CircleCI Status](https://circleci.com/gh/angular/protractor.svg?style=shield)](https://circleci.com/gh/angular/protractor) [![Join the chat at https://gitter.im/angular/protractor](https://badges.gitter.im/angular/protractor.svg)](https://gitter.im/angular/protractor)\n==========\n\n[Protractor](http://angular.github.io/protractor) is an end-to-end test framework for [AngularJS](http://angularjs.org/) applications. Protractor is a [Node.js](http://nodejs.org/) program built on top of [WebDriverJS](https://github.com/SeleniumHQ/selenium/wiki/WebDriverJs). Protractor runs tests against your application running in a real browser, interacting with it as a user would.\n\nCompatibility\n-------------\n\nProtractor 4 is compatible with nodejs v4 and newer. If you absolutely need to use nodejs at 0.12, use Protractor@2.\n\nProtractor works with Angular versions greater than 1.0.6/1.1.4, and is compatible with Angular 2 applications. Note that for Angular 2 apps, the `binding` and `model` locators are not supported. We recommend using `by.css`.\n\n\nGetting Started\n---------------\n\nThe Protractor documentation for users is located in the [protractor/docs](https://github.com/angular/protractor/tree/master/docs) folder.\n\nTo get set up and running quickly:\n - The [Protractor Website](http://angular.github.io/protractor)\n - Work through the [Tutorial](http://angular.github.io/protractor/#/tutorial)\n - Take a look at the [Table of Contents](http://angular.github.io/protractor/#/toc)\n\nOnce you are familiar with the tutorial, you’re ready to move on. To modify your environment, see the Protractor Setup docs. To start writing tests, see the Protractor Tests docs.\n\nTo better understand how Protractor works with the Selenium WebDriver and Selenium Server see the reference materials.\n\n\nGetting Help\n------------\n\nCheck the [Protractor FAQ](https://github.com/angular/protractor/blob/master/docs/faq.md) and read through the [Top 20 questions on StackOverflow](http://stackoverflow.com/questions/tagged/protractor?sort=votes&pageSize=20).\n\nPlease ask usage and debugging questions on [StackOverflow](http://stackoverflow.com/questions/tagged/protractor) (use the ["protractor"](http://stackoverflow.com/questions/ask?tags=protractor) tag), the [Gitter](https://gitter.im/angular/protractor) chat room, or in the [Angular discussion group](https://groups.google.com/forum/?fromgroups#!forum/angular). (Please do not ask support questions here on Github.)\n\n\nFor Contributors\n----------------\nClone the github repository:\n\n    git clone https://github.com/angular/protractor.git\n    cd protractor\n    npm install\n    ./bin/webdriver-manager update\n    cd website\n    npm install\n    cd ..\n\nStart up a selenium server. By default, the tests expect the selenium server to be running at `http://localhost:4444/wd/hub`. A selenium server can be started with [webdriver-manager](https://github.com/angular/webdriver-manager) which is included in\n[bin/webdriver-manager](https://github.com/angular/protractor/blob/master/bin/webdriver-manager).\n\n    webdriver-manager update\n    webdriver-manager start\n\nProtractor\'s test suite runs against the included test application.\n\nInstall the test application dependencies with:\n\n    npm run install_testapp\n\nStart that up with\n\n    npm start\n\nThen run the tests with\n\n    npm test\n',
+371 silly resolved     readmeFilename: 'README.md',
+371 silly resolved     bugs: { url: 'https://github.com/angular/protractor/issues' },
+371 silly resolved     _id: 'protractor@4.0.11',
+371 silly resolved     dist: { shasum: '5fc9671c2ce293b2d893afa8a34e353bd31f6a3e' },
+371 silly resolved     _from: 'protractor@',
+371 silly resolved     _resolved: 'https://registry.npmjs.org/protractor/-/protractor-4.0.11.tgz' } ]
+372 info install protractor@4.0.11 into /Users/alexswiec/.nvm/v0.10.26/lib
+373 info installOne protractor@4.0.11
+374 warn engine protractor@4.0.11: wanted: {"node":">=4.2.x"} (current: {"node":"v0.10.26","npm":"1.4.3"})
+375 info /Users/alexswiec/.nvm/v0.10.26/lib/node_modules/protractor unbuild
+376 verbose tar unpack /Users/alexswiec/.npm/protractor/4.0.11/package.tgz
+377 silly lockFile 3b34b71c-0-26-lib-node-modules-protractor tar:///Users/alexswiec/.nvm/v0.10.26/lib/node_modules/protractor
+378 verbose lock tar:///Users/alexswiec/.nvm/v0.10.26/lib/node_modules/protractor /Users/alexswiec/.npm/3b34b71c-0-26-lib-node-modules-protractor.lock
+379 silly lockFile 014a5b6f-pm-protractor-4-0-11-package-tgz tar:///Users/alexswiec/.npm/protractor/4.0.11/package.tgz
+380 verbose lock tar:///Users/alexswiec/.npm/protractor/4.0.11/package.tgz /Users/alexswiec/.npm/014a5b6f-pm-protractor-4-0-11-package-tgz.lock
+381 silly gunzTarPerm modes [ '755', '644' ]
+382 silly gunzTarPerm extractEntry package.json
+383 silly gunzTarPerm extractEntry README.md
+384 silly gunzTarPerm extractEntry LICENSE
+385 silly gunzTarPerm extractEntry gulpfile.js
+386 silly gunzTarPerm extractEntry restart_test.js
+387 silly gunzTarPerm extractEntry built/util.js
+388 silly gunzTarPerm extractEntry built/element.js
+389 silly gunzTarPerm extractEntry built/exitCodes.js
+390 silly gunzTarPerm extractEntry built/expectedConditions.js
+391 silly gunzTarPerm extractEntry built/index.js
+392 silly gunzTarPerm extractEntry built/debugger.js
+393 silly gunzTarPerm extractEntry built/locators.js
+394 silly gunzTarPerm extractEntry built/logger.js
+395 silly gunzTarPerm extractEntry built/main.js
+396 silly gunzTarPerm extractEntry built/plugins.js
+397 silly gunzTarPerm extractEntry built/ptor.js
+398 silly gunzTarPerm extractEntry built/configParser.js
+399 silly gunzTarPerm extractEntry built/runner.js
+400 silly gunzTarPerm extractEntry built/config.js
+401 silly gunzTarPerm extractEntry built/runnerCli.js
+402 silly gunzTarPerm extractEntry built/clientsidescripts.js
+403 silly gunzTarPerm extractEntry built/taskLogger.js
+404 silly gunzTarPerm extractEntry built/cli.js
+405 silly gunzTarPerm extractEntry built/taskRunner.js
+406 silly gunzTarPerm extractEntry built/browser.js
+407 silly gunzTarPerm extractEntry built/taskScheduler.js
+408 silly gunzTarPerm extractEntry built/launcher.js
+409 silly gunzTarPerm extractEntry built/debugger/debuggerCommons.js
+410 silly gunzTarPerm extractEntry built/debugger/clients/explorer.js
+411 silly gunzTarPerm extractEntry built/debugger/clients/wddebugger.js
+412 silly gunzTarPerm extractEntry built/debugger/modes/commandRepl.js
+413 silly gunzTarPerm extractEntry built/debugger/modes/debuggerRepl.js
+414 silly gunzTarPerm extractEntry built/launcher.d.ts
+415 silly gunzTarPerm extractEntry built/debugger.d.ts
+416 silly gunzTarPerm extractEntry built/browser.d.ts
+417 silly gunzTarPerm extractEntry built/locators.d.ts
+418 silly gunzTarPerm extractEntry built/config.d.ts
+419 silly gunzTarPerm extractEntry built/logger.d.ts
+420 silly gunzTarPerm extractEntry built/driverProviders/README.md
+421 silly gunzTarPerm extractEntry built/driverProviders/attachSession.js
+422 silly gunzTarPerm extractEntry built/driverProviders/mock.js
+423 silly gunzTarPerm extractEntry built/driverProviders/browserStack.js
+424 silly gunzTarPerm extractEntry built/driverProviders/local.js
+425 silly gunzTarPerm extractEntry built/driverProviders/direct.js
+426 silly gunzTarPerm extractEntry built/driverProviders/index.js
+427 silly gunzTarPerm extractEntry built/driverProviders/driverProvider.js
+428 silly gunzTarPerm extractEntry built/driverProviders/hosted.js
+429 silly gunzTarPerm extractEntry built/driverProviders/sauce.js
+430 silly gunzTarPerm extractEntry built/driverProviders/attachSession.d.ts
+431 silly gunzTarPerm extractEntry built/driverProviders/index.d.ts
+432 silly gunzTarPerm extractEntry built/driverProviders/driverProvider.d.ts
+433 silly gunzTarPerm extractEntry built/driverProviders/local.d.ts
+434 silly gunzTarPerm extractEntry built/driverProviders/direct.d.ts
+435 silly gunzTarPerm extractEntry built/driverProviders/mock.d.ts
+436 silly gunzTarPerm extractEntry built/driverProviders/browserStack.d.ts
+437 silly gunzTarPerm extractEntry built/driverProviders/sauce.d.ts
+438 silly gunzTarPerm extractEntry built/driverProviders/hosted.d.ts
+439 silly gunzTarPerm extractEntry built/main.d.ts
+440 silly gunzTarPerm extractEntry built/element.d.ts
+441 silly gunzTarPerm extractEntry built/plugins.d.ts
+442 silly gunzTarPerm extractEntry built/ambient.d.ts
+443 silly gunzTarPerm extractEntry built/ptor.d.ts
+444 silly gunzTarPerm extractEntry built/exitCodes.d.ts
+445 silly gunzTarPerm extractEntry built/runner.d.ts
+446 silly gunzTarPerm extractEntry built/configParser.d.ts
+447 silly gunzTarPerm extractEntry built/runnerCli.d.ts
+448 silly gunzTarPerm extractEntry built/expectedConditions.d.ts
+449 silly gunzTarPerm extractEntry built/selenium-webdriver/locators.js
+450 silly gunzTarPerm extractEntry built/selenium-webdriver/webdriver.js
+451 silly gunzTarPerm extractEntry built/spec/install/node_modules/protractor/exampleTypescript/angularPage.js
+452 silly gunzTarPerm extractEntry built/spec/install/node_modules/protractor/exampleTypescript/conf.js
+453 silly gunzTarPerm extractEntry built/spec/install/node_modules/protractor/exampleTypescript/confPageObjects.js
+454 silly gunzTarPerm extractEntry built/spec/install/node_modules/protractor/exampleTypescript/plugins.js
+455 silly gunzTarPerm extractEntry built/spec/install/node_modules/protractor/exampleTypescript/spec.js
+456 silly gunzTarPerm extractEntry built/spec/install/node_modules/protractor/exampleTypescript/specPageObjects.js
+457 silly gunzTarPerm extractEntry built/spec/install/node_modules/protractor/exampleTypescript/asyncAwait/conf.js
+458 silly gunzTarPerm extractEntry built/spec/install/node_modules/protractor/exampleTypescript/asyncAwait/spec.js
+459 silly gunzTarPerm extractEntry built/taskLogger.d.ts
+460 silly gunzTarPerm extractEntry built/cli.d.ts
+461 silly gunzTarPerm extractEntry built/taskRunner.d.ts
+462 silly gunzTarPerm extractEntry built/frameworks/README.md
+463 silly gunzTarPerm extractEntry built/frameworks/debugprint.js
+464 silly gunzTarPerm extractEntry built/frameworks/explorer.js
+465 silly gunzTarPerm extractEntry built/frameworks/jasmine.js
+466 silly gunzTarPerm extractEntry built/frameworks/mocha.js
+467 silly gunzTarPerm extractEntry built/taskScheduler.d.ts
+468 silly gunzTarPerm extractEntry built/index.d.ts
+469 silly gunzTarPerm extractEntry built/util.d.ts
+470 silly gunzTarPerm extractEntry built/lib/browser.js
+471 silly gunzTarPerm extractEntry built/lib/exitCodes.js
+472 silly gunzTarPerm extractEntry built/lib/expectedConditions.js
+473 silly gunzTarPerm extractEntry built/lib/launcher.js
+474 silly gunzTarPerm extractEntry built/lib/element.js
+475 silly gunzTarPerm extractEntry built/lib/cli.js
+476 silly gunzTarPerm extractEntry built/lib/main.js
+477 silly gunzTarPerm extractEntry built/lib/plugins.js
+478 silly gunzTarPerm extractEntry built/lib/ptor.js
+479 silly gunzTarPerm extractEntry built/lib/runner.js
+480 silly gunzTarPerm extractEntry built/lib/taskScheduler.js
+481 silly gunzTarPerm extractEntry built/lib/runnerCli.js
+482 silly gunzTarPerm extractEntry built/lib/configParser.js
+483 silly gunzTarPerm extractEntry built/lib/taskLogger.js
+484 silly gunzTarPerm extractEntry built/lib/config.js
+485 silly gunzTarPerm extractEntry built/lib/taskRunner.js
+486 silly gunzTarPerm extractEntry built/lib/locators.js
+487 silly gunzTarPerm extractEntry built/lib/util.js
+488 silly gunzTarPerm extractEntry built/lib/logger.js
+489 silly gunzTarPerm extractEntry built/lib/driverProviders/attachSession.js
+490 silly gunzTarPerm extractEntry built/lib/driverProviders/browserStack.js
+491 silly gunzTarPerm extractEntry built/lib/driverProviders/direct.js
+492 silly gunzTarPerm extractEntry built/lib/driverProviders/driverProvider.js
+493 silly gunzTarPerm extractEntry built/lib/driverProviders/hosted.js
+494 silly gunzTarPerm extractEntry built/lib/driverProviders/index.js
+495 silly gunzTarPerm extractEntry built/lib/driverProviders/local.js
+496 silly gunzTarPerm extractEntry built/lib/driverProviders/mock.js
+497 silly gunzTarPerm extractEntry built/lib/driverProviders/sauce.js
+498 silly gunzTarPerm extractEntry benchmark_bisect.sh
+499 silly gunzTarPerm extractEntry bin/elementexplorer.js
+500 silly gunzTarPerm extractEntry bin/protractor
+501 silly gunzTarPerm extractEntry bin/webdriver-manager
+502 silly gunzTarPerm extractEntry .idea/codeStyleSettings.xml
+503 silly gunzTarPerm extractEntry .idea/jsLibraryMappings.xml
+504 silly gunzTarPerm extractEntry .idea/modules.xml
+505 silly gunzTarPerm extractEntry .idea/protractor.iml
+506 silly gunzTarPerm extractEntry .idea/typescript-compiler.xml
+507 silly gunzTarPerm extractEntry .idea/vcs.xml
+508 silly gunzTarPerm extractEntry .idea/workspace.xml
+509 silly gunzTarPerm extractEntry circle.yml
+510 silly gunzTarPerm extractEntry example/conf.js
+511 silly gunzTarPerm extractEntry example/example_spec.js
+512 silly gunzTarPerm extractEntry exampleTypescript/package.json
+513 silly gunzTarPerm extractEntry exampleTypescript/README.md
+514 silly gunzTarPerm extractEntry exampleTypescript/angularPage.ts
+515 silly gunzTarPerm extractEntry exampleTypescript/asyncAwait/README.md
+516 silly gunzTarPerm extractEntry exampleTypescript/asyncAwait/conf.ts
+517 silly gunzTarPerm extractEntry exampleTypescript/asyncAwait/spec.ts
+518 silly gunzTarPerm extractEntry exampleTypescript/conf.ts
+519 silly gunzTarPerm extractEntry exampleTypescript/confPageObjects.ts
+520 silly gunzTarPerm extractEntry exampleTypescript/plugins.ts
+521 silly gunzTarPerm extractEntry exampleTypescript/spec.ts
+522 silly gunzTarPerm extractEntry exampleTypescript/specPageObjects.ts
+523 silly gunzTarPerm extractEntry exampleTypescript/tsconfig.json
+524 silly gunzTarPerm extractEntry CONTRIBUTING.md
+525 silly gunzTarPerm extractEntry .clang-format
+526 silly gunzTarPerm extractEntry CHANGELOG.md
+527 silly gunzTarPerm extractEntry tsconfig.json
+528 silly lockFile 3b34b71c-0-26-lib-node-modules-protractor tar:///Users/alexswiec/.nvm/v0.10.26/lib/node_modules/protractor
+529 silly lockFile 3b34b71c-0-26-lib-node-modules-protractor tar:///Users/alexswiec/.nvm/v0.10.26/lib/node_modules/protractor
+530 silly lockFile 014a5b6f-pm-protractor-4-0-11-package-tgz tar:///Users/alexswiec/.npm/protractor/4.0.11/package.tgz
+531 silly lockFile 014a5b6f-pm-protractor-4-0-11-package-tgz tar:///Users/alexswiec/.npm/protractor/4.0.11/package.tgz
+532 info preinstall protractor@4.0.11
+533 verbose readDependencies using package.json deps
+534 verbose readDependencies using package.json deps
+535 verbose cache add [ '@types/q@^0.0.32', null ]
+536 verbose cache add name=undefined spec="@types/q@^0.0.32" args=["@types/q@^0.0.32",null]
+537 verbose parsed url { protocol: null,
+537 verbose parsed url   slashes: null,
+537 verbose parsed url   auth: null,
+537 verbose parsed url   host: null,
+537 verbose parsed url   port: null,
+537 verbose parsed url   hostname: null,
+537 verbose parsed url   hash: null,
+537 verbose parsed url   search: null,
+537 verbose parsed url   query: null,
+537 verbose parsed url   pathname: '@types/q@^0.0.32',
+537 verbose parsed url   path: '@types/q@^0.0.32',
+537 verbose parsed url   href: '@types/q@^0.0.32' }
+538 verbose cache add name="" spec="types/q@^0.0.32" args=["","types/q@^0.0.32"]
+539 verbose parsed url { protocol: null,
+539 verbose parsed url   slashes: null,
+539 verbose parsed url   auth: null,
+539 verbose parsed url   host: null,
+539 verbose parsed url   port: null,
+539 verbose parsed url   hostname: null,
+539 verbose parsed url   hash: null,
+539 verbose parsed url   search: null,
+539 verbose parsed url   query: null,
+539 verbose parsed url   pathname: 'types/q@^0.0.32',
+539 verbose parsed url   path: 'types/q@^0.0.32',
+539 verbose parsed url   href: 'types/q@^0.0.32' }
+540 verbose cache add name="types/q" spec="^0.0.32" args=["types/q","^0.0.32"]
+541 verbose parsed url { protocol: null,
+541 verbose parsed url   slashes: null,
+541 verbose parsed url   auth: null,
+541 verbose parsed url   host: null,
+541 verbose parsed url   port: null,
+541 verbose parsed url   hostname: null,
+541 verbose parsed url   hash: null,
+541 verbose parsed url   search: null,
+541 verbose parsed url   query: null,
+541 verbose parsed url   pathname: '^0.0.32',
+541 verbose parsed url   path: '^0.0.32',
+541 verbose parsed url   href: '^0.0.32' }
+542 verbose addNamed [ 'types/q', '^0.0.32' ]
+543 verbose addNamed [ null, '=0.0.32' ]
+544 silly lockFile f882eb48-types-q-0-0-32 types/q@^0.0.32
+545 verbose lock types/q@^0.0.32 /Users/alexswiec/.npm/f882eb48-types-q-0-0-32.lock
+546 verbose cache add [ 'adm-zip@0.4.7', null ]
+547 verbose cache add name=undefined spec="adm-zip@0.4.7" args=["adm-zip@0.4.7",null]
+548 verbose parsed url { protocol: null,
+548 verbose parsed url   slashes: null,
+548 verbose parsed url   auth: null,
+548 verbose parsed url   host: null,
+548 verbose parsed url   port: null,
+548 verbose parsed url   hostname: null,
+548 verbose parsed url   hash: null,
+548 verbose parsed url   search: null,
+548 verbose parsed url   query: null,
+548 verbose parsed url   pathname: 'adm-zip@0.4.7',
+548 verbose parsed url   path: 'adm-zip@0.4.7',
+548 verbose parsed url   href: 'adm-zip@0.4.7' }
+549 verbose cache add name="adm-zip" spec="0.4.7" args=["adm-zip","0.4.7"]
+550 verbose parsed url { protocol: null,
+550 verbose parsed url   slashes: null,
+550 verbose parsed url   auth: null,
+550 verbose parsed url   host: null,
+550 verbose parsed url   port: null,
+550 verbose parsed url   hostname: null,
+550 verbose parsed url   hash: null,
+550 verbose parsed url   search: null,
+550 verbose parsed url   query: null,
+550 verbose parsed url   pathname: '0.4.7',
+550 verbose parsed url   path: '0.4.7',
+550 verbose parsed url   href: '0.4.7' }
+551 verbose addNamed [ 'adm-zip', '0.4.7' ]
+552 verbose addNamed [ '0.4.7', '0.4.7' ]
+553 silly lockFile df55e916-adm-zip-0-4-7 adm-zip@0.4.7
+554 verbose lock adm-zip@0.4.7 /Users/alexswiec/.npm/df55e916-adm-zip-0-4-7.lock
+555 verbose cache add [ '@types/selenium-webdriver@~2.53.31', null ]
+556 verbose cache add name=undefined spec="@types/selenium-webdriver@~2.53.31" args=["@types/selenium-webdriver@~2.53.31",null]
+557 verbose parsed url { protocol: null,
+557 verbose parsed url   slashes: null,
+557 verbose parsed url   auth: null,
+557 verbose parsed url   host: null,
+557 verbose parsed url   port: null,
+557 verbose parsed url   hostname: null,
+557 verbose parsed url   hash: null,
+557 verbose parsed url   search: null,
+557 verbose parsed url   query: null,
+557 verbose parsed url   pathname: '@types/selenium-webdriver@~2.53.31',
+557 verbose parsed url   path: '@types/selenium-webdriver@~2.53.31',
+557 verbose parsed url   href: '@types/selenium-webdriver@~2.53.31' }
+558 verbose cache add name="" spec="types/selenium-webdriver@~2.53.31" args=["","types/selenium-webdriver@~2.53.31"]
+559 verbose parsed url { protocol: null,
+559 verbose parsed url   slashes: null,
+559 verbose parsed url   auth: null,
+559 verbose parsed url   host: null,
+559 verbose parsed url   port: null,
+559 verbose parsed url   hostname: null,
+559 verbose parsed url   hash: null,
+559 verbose parsed url   search: null,
+559 verbose parsed url   query: null,
+559 verbose parsed url   pathname: 'types/selenium-webdriver@~2.53.31',
+559 verbose parsed url   path: 'types/selenium-webdriver@~2.53.31',
+559 verbose parsed url   href: 'types/selenium-webdriver@~2.53.31' }
+560 verbose cache add [ 'chalk@^1.1.3', null ]
+561 verbose cache add name=undefined spec="chalk@^1.1.3" args=["chalk@^1.1.3",null]
+562 verbose parsed url { protocol: null,
+562 verbose parsed url   slashes: null,
+562 verbose parsed url   auth: null,
+562 verbose parsed url   host: null,
+562 verbose parsed url   port: null,
+562 verbose parsed url   hostname: null,
+562 verbose parsed url   hash: null,
+562 verbose parsed url   search: null,
+562 verbose parsed url   query: null,
+562 verbose parsed url   pathname: 'chalk@^1.1.3',
+562 verbose parsed url   path: 'chalk@^1.1.3',
+562 verbose parsed url   href: 'chalk@^1.1.3' }
+563 verbose cache add name="chalk" spec="^1.1.3" args=["chalk","^1.1.3"]
+564 verbose parsed url { protocol: null,
+564 verbose parsed url   slashes: null,
+564 verbose parsed url   auth: null,
+564 verbose parsed url   host: null,
+564 verbose parsed url   port: null,
+564 verbose parsed url   hostname: null,
+564 verbose parsed url   hash: null,
+564 verbose parsed url   search: null,
+564 verbose parsed url   query: null,
+564 verbose parsed url   pathname: '^1.1.3',
+564 verbose parsed url   path: '^1.1.3',
+564 verbose parsed url   href: '^1.1.3' }
+565 verbose addNamed [ 'chalk', '^1.1.3' ]
+566 verbose addNamed [ null, '>=1.1.3-0 <2.0.0-0' ]
+567 silly lockFile d6387928-chalk-1-1-3 chalk@^1.1.3
+568 verbose lock chalk@^1.1.3 /Users/alexswiec/.npm/d6387928-chalk-1-1-3.lock
+569 verbose cache add [ 'glob@^7.0.3', null ]
+570 verbose cache add name=undefined spec="glob@^7.0.3" args=["glob@^7.0.3",null]
+571 verbose parsed url { protocol: null,
+571 verbose parsed url   slashes: null,
+571 verbose parsed url   auth: null,
+571 verbose parsed url   host: null,
+571 verbose parsed url   port: null,
+571 verbose parsed url   hostname: null,
+571 verbose parsed url   hash: null,
+571 verbose parsed url   search: null,
+571 verbose parsed url   query: null,
+571 verbose parsed url   pathname: 'glob@^7.0.3',
+571 verbose parsed url   path: 'glob@^7.0.3',
+571 verbose parsed url   href: 'glob@^7.0.3' }
+572 verbose cache add name="glob" spec="^7.0.3" args=["glob","^7.0.3"]
+573 verbose parsed url { protocol: null,
+573 verbose parsed url   slashes: null,
+573 verbose parsed url   auth: null,
+573 verbose parsed url   host: null,
+573 verbose parsed url   port: null,
+573 verbose parsed url   hostname: null,
+573 verbose parsed url   hash: null,
+573 verbose parsed url   search: null,
+573 verbose parsed url   query: null,
+573 verbose parsed url   pathname: '^7.0.3',
+573 verbose parsed url   path: '^7.0.3',
+573 verbose parsed url   href: '^7.0.3' }
+574 verbose addNamed [ 'glob', '^7.0.3' ]
+575 verbose addNamed [ null, '>=7.0.3-0 <8.0.0-0' ]
+576 silly lockFile a2f41c87-glob-7-0-3 glob@^7.0.3
+577 verbose lock glob@^7.0.3 /Users/alexswiec/.npm/a2f41c87-glob-7-0-3.lock
+578 silly addNameRange { name: 'types/q', range: '=0.0.32', hasData: false }
+579 verbose cache add name="types/selenium-webdriver" spec="~2.53.31" args=["types/selenium-webdriver","~2.53.31"]
+580 verbose parsed url { protocol: null,
+580 verbose parsed url   slashes: null,
+580 verbose parsed url   auth: null,
+580 verbose parsed url   host: null,
+580 verbose parsed url   port: null,
+580 verbose parsed url   hostname: null,
+580 verbose parsed url   hash: null,
+580 verbose parsed url   search: null,
+580 verbose parsed url   query: null,
+580 verbose parsed url   pathname: '~2.53.31',
+580 verbose parsed url   path: '~2.53.31',
+580 verbose parsed url   href: '~2.53.31' }
+581 verbose addNamed [ 'types/selenium-webdriver', '~2.53.31' ]
+582 verbose addNamed [ null, '>=2.53.31-0 <2.54.0-0' ]
+583 silly lockFile d94e360e-types-selenium-webdriver-2-53-31 types/selenium-webdriver@~2.53.31
+584 verbose lock types/selenium-webdriver@~2.53.31 /Users/alexswiec/.npm/d94e360e-types-selenium-webdriver-2-53-31.lock
+585 verbose cache add [ 'jasmine@2.4.1', null ]
+586 verbose cache add name=undefined spec="jasmine@2.4.1" args=["jasmine@2.4.1",null]
+587 verbose parsed url { protocol: null,
+587 verbose parsed url   slashes: null,
+587 verbose parsed url   auth: null,
+587 verbose parsed url   host: null,
+587 verbose parsed url   port: null,
+587 verbose parsed url   hostname: null,
+587 verbose parsed url   hash: null,
+587 verbose parsed url   search: null,
+587 verbose parsed url   query: null,
+587 verbose parsed url   pathname: 'jasmine@2.4.1',
+587 verbose parsed url   path: 'jasmine@2.4.1',
+587 verbose parsed url   href: 'jasmine@2.4.1' }
+588 verbose cache add name="jasmine" spec="2.4.1" args=["jasmine","2.4.1"]
+589 verbose parsed url { protocol: null,
+589 verbose parsed url   slashes: null,
+589 verbose parsed url   auth: null,
+589 verbose parsed url   host: null,
+589 verbose parsed url   port: null,
+589 verbose parsed url   hostname: null,
+589 verbose parsed url   hash: null,
+589 verbose parsed url   search: null,
+589 verbose parsed url   query: null,
+589 verbose parsed url   pathname: '2.4.1',
+589 verbose parsed url   path: '2.4.1',
+589 verbose parsed url   href: '2.4.1' }
+590 verbose addNamed [ 'jasmine', '2.4.1' ]
+591 verbose addNamed [ '2.4.1', '2.4.1' ]
+592 silly lockFile cd96ce81-jasmine-2-4-1 jasmine@2.4.1
+593 verbose lock jasmine@2.4.1 /Users/alexswiec/.npm/cd96ce81-jasmine-2-4-1.lock
+594 verbose cache add [ 'jasminewd2@0.0.10', null ]
+595 verbose cache add name=undefined spec="jasminewd2@0.0.10" args=["jasminewd2@0.0.10",null]
+596 verbose parsed url { protocol: null,
+596 verbose parsed url   slashes: null,
+596 verbose parsed url   auth: null,
+596 verbose parsed url   host: null,
+596 verbose parsed url   port: null,
+596 verbose parsed url   hostname: null,
+596 verbose parsed url   hash: null,
+596 verbose parsed url   search: null,
+596 verbose parsed url   query: null,
+596 verbose parsed url   pathname: 'jasminewd2@0.0.10',
+596 verbose parsed url   path: 'jasminewd2@0.0.10',
+596 verbose parsed url   href: 'jasminewd2@0.0.10' }
+597 verbose cache add name="jasminewd2" spec="0.0.10" args=["jasminewd2","0.0.10"]
+598 verbose parsed url { protocol: null,
+598 verbose parsed url   slashes: null,
+598 verbose parsed url   auth: null,
+598 verbose parsed url   host: null,
+598 verbose parsed url   port: null,
+598 verbose parsed url   hostname: null,
+598 verbose parsed url   hash: null,
+598 verbose parsed url   search: null,
+598 verbose parsed url   query: null,
+598 verbose parsed url   pathname: '0.0.10',
+598 verbose parsed url   path: '0.0.10',
+598 verbose parsed url   href: '0.0.10' }
+599 verbose addNamed [ 'jasminewd2', '0.0.10' ]
+600 verbose addNamed [ '0.0.10', '0.0.10' ]
+601 silly lockFile ff953915-jasminewd2-0-0-10 jasminewd2@0.0.10
+602 verbose lock jasminewd2@0.0.10 /Users/alexswiec/.npm/ff953915-jasminewd2-0-0-10.lock
+603 verbose cache add [ 'optimist@~0.6.0', null ]
+604 verbose cache add name=undefined spec="optimist@~0.6.0" args=["optimist@~0.6.0",null]
+605 verbose parsed url { protocol: null,
+605 verbose parsed url   slashes: null,
+605 verbose parsed url   auth: null,
+605 verbose parsed url   host: null,
+605 verbose parsed url   port: null,
+605 verbose parsed url   hostname: null,
+605 verbose parsed url   hash: null,
+605 verbose parsed url   search: null,
+605 verbose parsed url   query: null,
+605 verbose parsed url   pathname: 'optimist@~0.6.0',
+605 verbose parsed url   path: 'optimist@~0.6.0',
+605 verbose parsed url   href: 'optimist@~0.6.0' }
+606 verbose cache add name="optimist" spec="~0.6.0" args=["optimist","~0.6.0"]
+607 verbose parsed url { protocol: null,
+607 verbose parsed url   slashes: null,
+607 verbose parsed url   auth: null,
+607 verbose parsed url   host: null,
+607 verbose parsed url   port: null,
+607 verbose parsed url   hostname: null,
+607 verbose parsed url   hash: null,
+607 verbose parsed url   search: null,
+607 verbose parsed url   query: null,
+607 verbose parsed url   pathname: '~0.6.0',
+607 verbose parsed url   path: '~0.6.0',
+607 verbose parsed url   href: '~0.6.0' }
+608 verbose addNamed [ 'optimist', '~0.6.0' ]
+609 verbose addNamed [ null, '>=0.6.0-0 <0.7.0-0' ]
+610 silly lockFile 07193858-optimist-0-6-0 optimist@~0.6.0
+611 verbose lock optimist@~0.6.0 /Users/alexswiec/.npm/07193858-optimist-0-6-0.lock
+612 verbose url raw types/q
+613 verbose url resolving [ 'https://registry.npmjs.org/', './types/q' ]
+614 verbose url resolved https://registry.npmjs.org/types/q
+615 info trying registry request attempt 1 at 17:17:10
+616 http GET https://registry.npmjs.org/types/q
+617 verbose url raw adm-zip/0.4.7
+618 verbose url resolving [ 'https://registry.npmjs.org/', './adm-zip/0.4.7' ]
+619 verbose url resolved https://registry.npmjs.org/adm-zip/0.4.7
+620 info trying registry request attempt 1 at 17:17:10
+621 http GET https://registry.npmjs.org/adm-zip/0.4.7
+622 verbose cache add [ 'q@1.4.1', null ]
+623 verbose cache add name=undefined spec="q@1.4.1" args=["q@1.4.1",null]
+624 verbose parsed url { protocol: null,
+624 verbose parsed url   slashes: null,
+624 verbose parsed url   auth: null,
+624 verbose parsed url   host: null,
+624 verbose parsed url   port: null,
+624 verbose parsed url   hostname: null,
+624 verbose parsed url   hash: null,
+624 verbose parsed url   search: null,
+624 verbose parsed url   query: null,
+624 verbose parsed url   pathname: 'q@1.4.1',
+624 verbose parsed url   path: 'q@1.4.1',
+624 verbose parsed url   href: 'q@1.4.1' }
+625 verbose cache add name="q" spec="1.4.1" args=["q","1.4.1"]
+626 verbose parsed url { protocol: null,
+626 verbose parsed url   slashes: null,
+626 verbose parsed url   auth: null,
+626 verbose parsed url   host: null,
+626 verbose parsed url   port: null,
+626 verbose parsed url   hostname: null,
+626 verbose parsed url   hash: null,
+626 verbose parsed url   search: null,
+626 verbose parsed url   query: null,
+626 verbose parsed url   pathname: '1.4.1',
+626 verbose parsed url   path: '1.4.1',
+626 verbose parsed url   href: '1.4.1' }
+627 verbose addNamed [ 'q', '1.4.1' ]
+628 verbose addNamed [ '1.4.1', '1.4.1' ]
+629 silly lockFile 0ea9f2d2-q-1-4-1 q@1.4.1
+630 verbose lock q@1.4.1 /Users/alexswiec/.npm/0ea9f2d2-q-1-4-1.lock
+631 verbose cache add [ 'saucelabs@~1.3.0', null ]
+632 verbose cache add name=undefined spec="saucelabs@~1.3.0" args=["saucelabs@~1.3.0",null]
+633 verbose parsed url { protocol: null,
+633 verbose parsed url   slashes: null,
+633 verbose parsed url   auth: null,
+633 verbose parsed url   host: null,
+633 verbose parsed url   port: null,
+633 verbose parsed url   hostname: null,
+633 verbose parsed url   hash: null,
+633 verbose parsed url   search: null,
+633 verbose parsed url   query: null,
+633 verbose parsed url   pathname: 'saucelabs@~1.3.0',
+633 verbose parsed url   path: 'saucelabs@~1.3.0',
+633 verbose parsed url   href: 'saucelabs@~1.3.0' }
+634 verbose cache add name="saucelabs" spec="~1.3.0" args=["saucelabs","~1.3.0"]
+635 verbose parsed url { protocol: null,
+635 verbose parsed url   slashes: null,
+635 verbose parsed url   auth: null,
+635 verbose parsed url   host: null,
+635 verbose parsed url   port: null,
+635 verbose parsed url   hostname: null,
+635 verbose parsed url   hash: null,
+635 verbose parsed url   search: null,
+635 verbose parsed url   query: null,
+635 verbose parsed url   pathname: '~1.3.0',
+635 verbose parsed url   path: '~1.3.0',
+635 verbose parsed url   href: '~1.3.0' }
+636 verbose addNamed [ 'saucelabs', '~1.3.0' ]
+637 verbose addNamed [ null, '>=1.3.0-0 <1.4.0-0' ]
+638 silly lockFile 13721d4f-saucelabs-1-3-0 saucelabs@~1.3.0
+639 verbose lock saucelabs@~1.3.0 /Users/alexswiec/.npm/13721d4f-saucelabs-1-3-0.lock
+640 verbose cache add [ 'selenium-webdriver@2.53.3', null ]
+641 verbose cache add name=undefined spec="selenium-webdriver@2.53.3" args=["selenium-webdriver@2.53.3",null]
+642 verbose parsed url { protocol: null,
+642 verbose parsed url   slashes: null,
+642 verbose parsed url   auth: null,
+642 verbose parsed url   host: null,
+642 verbose parsed url   port: null,
+642 verbose parsed url   hostname: null,
+642 verbose parsed url   hash: null,
+642 verbose parsed url   search: null,
+642 verbose parsed url   query: null,
+642 verbose parsed url   pathname: 'selenium-webdriver@2.53.3',
+642 verbose parsed url   path: 'selenium-webdriver@2.53.3',
+642 verbose parsed url   href: 'selenium-webdriver@2.53.3' }
+643 verbose cache add name="selenium-webdriver" spec="2.53.3" args=["selenium-webdriver","2.53.3"]
+644 verbose parsed url { protocol: null,
+644 verbose parsed url   slashes: null,
+644 verbose parsed url   auth: null,
+644 verbose parsed url   host: null,
+644 verbose parsed url   port: null,
+644 verbose parsed url   hostname: null,
+644 verbose parsed url   hash: null,
+644 verbose parsed url   search: null,
+644 verbose parsed url   query: null,
+644 verbose parsed url   pathname: '2.53.3',
+644 verbose parsed url   path: '2.53.3',
+644 verbose parsed url   href: '2.53.3' }
+645 verbose addNamed [ 'selenium-webdriver', '2.53.3' ]
+646 verbose addNamed [ '2.53.3', '2.53.3' ]
+647 silly lockFile e4e8a082-selenium-webdriver-2-53-3 selenium-webdriver@2.53.3
+648 verbose lock selenium-webdriver@2.53.3 /Users/alexswiec/.npm/e4e8a082-selenium-webdriver-2-53-3.lock
+649 verbose cache add [ 'source-map-support@~0.4.0', null ]
+650 verbose cache add name=undefined spec="source-map-support@~0.4.0" args=["source-map-support@~0.4.0",null]
+651 verbose parsed url { protocol: null,
+651 verbose parsed url   slashes: null,
+651 verbose parsed url   auth: null,
+651 verbose parsed url   host: null,
+651 verbose parsed url   port: null,
+651 verbose parsed url   hostname: null,
+651 verbose parsed url   hash: null,
+651 verbose parsed url   search: null,
+651 verbose parsed url   query: null,
+651 verbose parsed url   pathname: 'source-map-support@~0.4.0',
+651 verbose parsed url   path: 'source-map-support@~0.4.0',
+651 verbose parsed url   href: 'source-map-support@~0.4.0' }
+652 verbose cache add name="source-map-support" spec="~0.4.0" args=["source-map-support","~0.4.0"]
+653 verbose parsed url { protocol: null,
+653 verbose parsed url   slashes: null,
+653 verbose parsed url   auth: null,
+653 verbose parsed url   host: null,
+653 verbose parsed url   port: null,
+653 verbose parsed url   hostname: null,
+653 verbose parsed url   hash: null,
+653 verbose parsed url   search: null,
+653 verbose parsed url   query: null,
+653 verbose parsed url   pathname: '~0.4.0',
+653 verbose parsed url   path: '~0.4.0',
+653 verbose parsed url   href: '~0.4.0' }
+654 verbose addNamed [ 'source-map-support', '~0.4.0' ]
+655 verbose addNamed [ null, '>=0.4.0-0 <0.5.0-0' ]
+656 silly lockFile 703e10c9-source-map-support-0-4-0 source-map-support@~0.4.0
+657 verbose lock source-map-support@~0.4.0 /Users/alexswiec/.npm/703e10c9-source-map-support-0-4-0.lock
+658 verbose cache add [ 'webdriver-manager@^10.2.8', null ]
+659 verbose cache add name=undefined spec="webdriver-manager@^10.2.8" args=["webdriver-manager@^10.2.8",null]
+660 verbose parsed url { protocol: null,
+660 verbose parsed url   slashes: null,
+660 verbose parsed url   auth: null,
+660 verbose parsed url   host: null,
+660 verbose parsed url   port: null,
+660 verbose parsed url   hostname: null,
+660 verbose parsed url   hash: null,
+660 verbose parsed url   search: null,
+660 verbose parsed url   query: null,
+660 verbose parsed url   pathname: 'webdriver-manager@^10.2.8',
+660 verbose parsed url   path: 'webdriver-manager@^10.2.8',
+660 verbose parsed url   href: 'webdriver-manager@^10.2.8' }
+661 verbose cache add name="webdriver-manager" spec="^10.2.8" args=["webdriver-manager","^10.2.8"]
+662 verbose parsed url { protocol: null,
+662 verbose parsed url   slashes: null,
+662 verbose parsed url   auth: null,
+662 verbose parsed url   host: null,
+662 verbose parsed url   port: null,
+662 verbose parsed url   hostname: null,
+662 verbose parsed url   hash: null,
+662 verbose parsed url   search: null,
+662 verbose parsed url   query: null,
+662 verbose parsed url   pathname: '^10.2.8',
+662 verbose parsed url   path: '^10.2.8',
+662 verbose parsed url   href: '^10.2.8' }
+663 verbose addNamed [ 'webdriver-manager', '^10.2.8' ]
+664 verbose addNamed [ null, '>=10.2.8-0 <11.0.0-0' ]
+665 silly lockFile 2175c823-webdriver-manager-10-2-8 webdriver-manager@^10.2.8
+666 verbose lock webdriver-manager@^10.2.8 /Users/alexswiec/.npm/2175c823-webdriver-manager-10-2-8.lock
+667 verbose cache add [ '@types/jasmine@^2.5.36', null ]
+668 verbose cache add name=undefined spec="@types/jasmine@^2.5.36" args=["@types/jasmine@^2.5.36",null]
+669 verbose parsed url { protocol: null,
+669 verbose parsed url   slashes: null,
+669 verbose parsed url   auth: null,
+669 verbose parsed url   host: null,
+669 verbose parsed url   port: null,
+669 verbose parsed url   hostname: null,
+669 verbose parsed url   hash: null,
+669 verbose parsed url   search: null,
+669 verbose parsed url   query: null,
+669 verbose parsed url   pathname: '@types/jasmine@^2.5.36',
+669 verbose parsed url   path: '@types/jasmine@^2.5.36',
+669 verbose parsed url   href: '@types/jasmine@^2.5.36' }
+670 silly addNameRange { name: 'chalk', range: '>=1.1.3-0 <2.0.0-0', hasData: false }
+671 silly addNameRange { name: 'glob', range: '>=7.0.3-0 <8.0.0-0', hasData: false }
+672 silly addNameRange { name: 'types/selenium-webdriver',
+672 silly addNameRange   range: '>=2.53.31-0 <2.54.0-0',
+672 silly addNameRange   hasData: false }
+673 verbose cache add name="" spec="types/jasmine@^2.5.36" args=["","types/jasmine@^2.5.36"]
+674 verbose parsed url { protocol: null,
+674 verbose parsed url   slashes: null,
+674 verbose parsed url   auth: null,
+674 verbose parsed url   host: null,
+674 verbose parsed url   port: null,
+674 verbose parsed url   hostname: null,
+674 verbose parsed url   hash: null,
+674 verbose parsed url   search: null,
+674 verbose parsed url   query: null,
+674 verbose parsed url   pathname: 'types/jasmine@^2.5.36',
+674 verbose parsed url   path: 'types/jasmine@^2.5.36',
+674 verbose parsed url   href: 'types/jasmine@^2.5.36' }
+675 verbose cache add [ '@types/node@^6.0.46', null ]
+676 verbose cache add name=undefined spec="@types/node@^6.0.46" args=["@types/node@^6.0.46",null]
+677 verbose parsed url { protocol: null,
+677 verbose parsed url   slashes: null,
+677 verbose parsed url   auth: null,
+677 verbose parsed url   host: null,
+677 verbose parsed url   port: null,
+677 verbose parsed url   hostname: null,
+677 verbose parsed url   hash: null,
+677 verbose parsed url   search: null,
+677 verbose parsed url   query: null,
+677 verbose parsed url   pathname: '@types/node@^6.0.46',
+677 verbose parsed url   path: '@types/node@^6.0.46',
+677 verbose parsed url   href: '@types/node@^6.0.46' }
+678 silly addNameRange { name: 'optimist', range: '>=0.6.0-0 <0.7.0-0', hasData: false }
+679 verbose url raw types/selenium-webdriver
+680 verbose url resolving [ 'https://registry.npmjs.org/', './types/selenium-webdriver' ]
+681 verbose url resolved https://registry.npmjs.org/types/selenium-webdriver
+682 info trying registry request attempt 1 at 17:17:10
+683 http GET https://registry.npmjs.org/types/selenium-webdriver
+684 silly addNameRange { name: 'saucelabs',
+684 silly addNameRange   range: '>=1.3.0-0 <1.4.0-0',
+684 silly addNameRange   hasData: false }
+685 silly addNameRange { name: 'source-map-support',
+685 silly addNameRange   range: '>=0.4.0-0 <0.5.0-0',
+685 silly addNameRange   hasData: false }
+686 silly addNameRange { name: 'webdriver-manager',
+686 silly addNameRange   range: '>=10.2.8-0 <11.0.0-0',
+686 silly addNameRange   hasData: false }
+687 verbose url raw jasmine/2.4.1
+688 verbose url resolving [ 'https://registry.npmjs.org/', './jasmine/2.4.1' ]
+689 verbose url resolved https://registry.npmjs.org/jasmine/2.4.1
+690 info trying registry request attempt 1 at 17:17:10
+691 http GET https://registry.npmjs.org/jasmine/2.4.1
+692 verbose url raw jasminewd2/0.0.10
+693 verbose url resolving [ 'https://registry.npmjs.org/', './jasminewd2/0.0.10' ]
+694 verbose url resolved https://registry.npmjs.org/jasminewd2/0.0.10
+695 info trying registry request attempt 1 at 17:17:10
+696 http GET https://registry.npmjs.org/jasminewd2/0.0.10
+697 verbose cache add name="types/jasmine" spec="^2.5.36" args=["types/jasmine","^2.5.36"]
+698 verbose parsed url { protocol: null,
+698 verbose parsed url   slashes: null,
+698 verbose parsed url   auth: null,
+698 verbose parsed url   host: null,
+698 verbose parsed url   port: null,
+698 verbose parsed url   hostname: null,
+698 verbose parsed url   hash: null,
+698 verbose parsed url   search: null,
+698 verbose parsed url   query: null,
+698 verbose parsed url   pathname: '^2.5.36',
+698 verbose parsed url   path: '^2.5.36',
+698 verbose parsed url   href: '^2.5.36' }
+699 verbose addNamed [ 'types/jasmine', '^2.5.36' ]
+700 verbose addNamed [ null, '>=2.5.36-0 <3.0.0-0' ]
+701 silly lockFile 6b422ad9-types-jasmine-2-5-36 types/jasmine@^2.5.36
+702 verbose lock types/jasmine@^2.5.36 /Users/alexswiec/.npm/6b422ad9-types-jasmine-2-5-36.lock
+703 verbose cache add name="" spec="types/node@^6.0.46" args=["","types/node@^6.0.46"]
+704 verbose parsed url { protocol: null,
+704 verbose parsed url   slashes: null,
+704 verbose parsed url   auth: null,
+704 verbose parsed url   host: null,
+704 verbose parsed url   port: null,
+704 verbose parsed url   hostname: null,
+704 verbose parsed url   hash: null,
+704 verbose parsed url   search: null,
+704 verbose parsed url   query: null,
+704 verbose parsed url   pathname: 'types/node@^6.0.46',
+704 verbose parsed url   path: 'types/node@^6.0.46',
+704 verbose parsed url   href: 'types/node@^6.0.46' }
+705 verbose url raw q/1.4.1
+706 verbose url resolving [ 'https://registry.npmjs.org/', './q/1.4.1' ]
+707 verbose url resolved https://registry.npmjs.org/q/1.4.1
+708 info trying registry request attempt 1 at 17:17:10
+709 http GET https://registry.npmjs.org/q/1.4.1
+710 verbose url raw selenium-webdriver/2.53.3
+711 verbose url resolving [ 'https://registry.npmjs.org/', './selenium-webdriver/2.53.3' ]
+712 verbose url resolved https://registry.npmjs.org/selenium-webdriver/2.53.3
+713 info trying registry request attempt 1 at 17:17:10
+714 http GET https://registry.npmjs.org/selenium-webdriver/2.53.3
+715 verbose url raw saucelabs
+716 verbose url resolving [ 'https://registry.npmjs.org/', './saucelabs' ]
+717 verbose url resolved https://registry.npmjs.org/saucelabs
+718 info trying registry request attempt 1 at 17:17:10
+719 http GET https://registry.npmjs.org/saucelabs
+720 verbose url raw webdriver-manager
+721 verbose url resolving [ 'https://registry.npmjs.org/', './webdriver-manager' ]
+722 verbose url resolved https://registry.npmjs.org/webdriver-manager
+723 info trying registry request attempt 1 at 17:17:10
+724 http GET https://registry.npmjs.org/webdriver-manager
+725 verbose url raw source-map-support
+726 verbose url resolving [ 'https://registry.npmjs.org/', './source-map-support' ]
+727 verbose url resolved https://registry.npmjs.org/source-map-support
+728 info trying registry request attempt 1 at 17:17:10
+729 http GET https://registry.npmjs.org/source-map-support
+730 verbose cache add name="types/node" spec="^6.0.46" args=["types/node","^6.0.46"]
+731 verbose parsed url { protocol: null,
+731 verbose parsed url   slashes: null,
+731 verbose parsed url   auth: null,
+731 verbose parsed url   host: null,
+731 verbose parsed url   port: null,
+731 verbose parsed url   hostname: null,
+731 verbose parsed url   hash: null,
+731 verbose parsed url   search: null,
+731 verbose parsed url   query: null,
+731 verbose parsed url   pathname: '^6.0.46',
+731 verbose parsed url   path: '^6.0.46',
+731 verbose parsed url   href: '^6.0.46' }
+732 verbose addNamed [ 'types/node', '^6.0.46' ]
+733 verbose addNamed [ null, '>=6.0.46-0 <7.0.0-0' ]
+734 silly lockFile 6c9f2269-types-node-6-0-46 types/node@^6.0.46
+735 verbose lock types/node@^6.0.46 /Users/alexswiec/.npm/6c9f2269-types-node-6-0-46.lock
+736 silly addNameRange { name: 'types/jasmine',
+736 silly addNameRange   range: '>=2.5.36-0 <3.0.0-0',
+736 silly addNameRange   hasData: false }
+737 verbose url raw types/jasmine
+738 verbose url resolving [ 'https://registry.npmjs.org/', './types/jasmine' ]
+739 verbose url resolved https://registry.npmjs.org/types/jasmine
+740 info trying registry request attempt 1 at 17:17:10
+741 http GET https://registry.npmjs.org/types/jasmine
+742 silly addNameRange { name: 'types/node',
+742 silly addNameRange   range: '>=6.0.46-0 <7.0.0-0',
+742 silly addNameRange   hasData: false }
+743 verbose url raw types/node
+744 verbose url resolving [ 'https://registry.npmjs.org/', './types/node' ]
+745 verbose url resolved https://registry.npmjs.org/types/node
+746 info trying registry request attempt 1 at 17:17:10
+747 http GET https://registry.npmjs.org/types/node
+748 verbose url raw chalk
+749 verbose url resolving [ 'https://registry.npmjs.org/', './chalk' ]
+750 verbose url resolved https://registry.npmjs.org/chalk
+751 info trying registry request attempt 1 at 17:17:10
+752 verbose etag "5837f1c5-8142"
+753 http GET https://registry.npmjs.org/chalk
+754 verbose url raw optimist
+755 verbose url resolving [ 'https://registry.npmjs.org/', './optimist' ]
+756 verbose url resolved https://registry.npmjs.org/optimist
+757 info trying registry request attempt 1 at 17:17:10
+758 verbose etag "582f0669-b6f3"
+759 http GET https://registry.npmjs.org/optimist
+760 verbose url raw glob
+761 verbose url resolving [ 'https://registry.npmjs.org/', './glob' ]
+762 verbose url resolved https://registry.npmjs.org/glob
+763 info trying registry request attempt 1 at 17:17:10
+764 verbose etag "58317aeb-1f4f0"
+765 http GET https://registry.npmjs.org/glob
+766 http 200 https://registry.npmjs.org/adm-zip/0.4.7
+767 silly registry.get cb [ 200,
+767 silly registry.get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+767 silly registry.get     etag: '"JKV12T7XCLFTVL92L238A8C8"',
+767 silly registry.get     'content-type': 'application/json',
+767 silly registry.get     'cache-control': 'max-age=300',
+767 silly registry.get     'content-length': '1282',
+767 silly registry.get     'accept-ranges': 'bytes',
+767 silly registry.get     date: 'Sat, 26 Nov 2016 16:17:10 GMT',
+767 silly registry.get     via: '1.1 varnish',
+767 silly registry.get     age: '0',
+767 silly registry.get     connection: 'keep-alive',
+767 silly registry.get     'x-served-by': 'cache-cdg8720-CDG',
+767 silly registry.get     'x-cache': 'MISS',
+767 silly registry.get     'x-cache-hits': '0',
+767 silly registry.get     'x-timer': 'S1480177029.703107,VS0,VE308',
+767 silly registry.get     vary: 'Accept-Encoding' } ]
+768 http 404 https://registry.npmjs.org/types/q
+769 silly registry.get cb [ 404,
+769 silly registry.get   { 'content-type': 'application/json',
+769 silly registry.get     'cache-control': 'max-age=0',
+769 silly registry.get     'content-length': '2',
+769 silly registry.get     'accept-ranges': 'bytes',
+769 silly registry.get     date: 'Sat, 26 Nov 2016 16:17:10 GMT',
+769 silly registry.get     via: '1.1 varnish',
+769 silly registry.get     age: '0',
+769 silly registry.get     connection: 'keep-alive',
+769 silly registry.get     'x-served-by': 'cache-cdg8725-CDG',
+769 silly registry.get     'x-cache': 'MISS',
+769 silly registry.get     'x-cache-hits': '0',
+769 silly registry.get     'x-timer': 'S1480177029.693862,VS0,VE391',
+769 silly registry.get     vary: 'Accept-Encoding' } ]
+770 http 200 https://registry.npmjs.org/jasmine/2.4.1
+771 silly registry.get cb [ 200,
+771 silly registry.get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+771 silly registry.get     etag: '"CVC7GF9KK2V70G1WQJI8N54Q2"',
+771 silly registry.get     'content-type': 'application/json',
+771 silly registry.get     'cache-control': 'max-age=300',
+771 silly registry.get     'content-length': '1187',
+771 silly registry.get     'accept-ranges': 'bytes',
+771 silly registry.get     date: 'Sat, 26 Nov 2016 16:17:10 GMT',
+771 silly registry.get     via: '1.1 varnish',
+771 silly registry.get     age: '0',
+771 silly registry.get     connection: 'keep-alive',
+771 silly registry.get     'x-served-by': 'cache-cdg8721-CDG',
+771 silly registry.get     'x-cache': 'MISS',
+771 silly registry.get     'x-cache-hits': '0',
+771 silly registry.get     'x-timer': 'S1480177029.710740,VS0,VE391',
+771 silly registry.get     vary: 'Accept-Encoding' } ]
+772 http 404 https://registry.npmjs.org/types/selenium-webdriver
+773 silly registry.get cb [ 404,
+773 silly registry.get   { 'content-type': 'application/json',
+773 silly registry.get     'cache-control': 'max-age=0',
+773 silly registry.get     'content-length': '2',
+773 silly registry.get     'accept-ranges': 'bytes',
+773 silly registry.get     date: 'Sat, 26 Nov 2016 16:17:10 GMT',
+773 silly registry.get     via: '1.1 varnish',
+773 silly registry.get     age: '0',
+773 silly registry.get     connection: 'keep-alive',
+773 silly registry.get     'x-served-by': 'cache-cdg8733-CDG',
+773 silly registry.get     'x-cache': 'MISS',
+773 silly registry.get     'x-cache-hits': '0',
+773 silly registry.get     'x-timer': 'S1480177029.716599,VS0,VE387',
+773 silly registry.get     vary: 'Accept-Encoding' } ]
+774 silly addNameRange number 2 { name: 'types/selenium-webdriver',
+774 silly addNameRange   range: '>=2.53.31-0 <2.54.0-0',
+774 silly addNameRange   hasData: true }
+775 silly addNameRange versions [ undefined, [] ]
+776 error TypeError: Cannot read property 'latest' of undefined
+776 error     at next (/Users/alexswiec/.nvm/v0.10.26/lib/node_modules/npm/lib/cache.js:744:35)
+776 error     at /Users/alexswiec/.nvm/v0.10.26/lib/node_modules/npm/lib/cache.js:732:5
+776 error     at saved (/Users/alexswiec/.nvm/v0.10.26/lib/node_modules/npm/node_modules/npm-registry-client/lib/get.js:148:7)
+776 error     at /Users/alexswiec/.nvm/v0.10.26/lib/node_modules/npm/node_modules/graceful-fs/polyfills.js:133:7
+776 error     at Object.oncomplete (fs.js:107:15)
+777 error If you need help, you may report this *entire* log,
+777 error including the npm and node versions, at:
+777 error     <http://github.com/npm/npm/issues>
+778 error System Darwin 15.5.0
+779 error command "/Users/alexswiec/.nvm/v0.10.26/bin/node" "/Users/alexswiec/.nvm/v0.10.26/bin/npm" "install" "protractor" "-g"
+780 error cwd /Users/alexswiec/Developer/full-stack/Course 3 -  FE JS Framework - AngularJS/Assignments- ConFusion
+781 error node -v v0.10.26
+782 error npm -v 1.4.3
+783 error type non_object_property_load
+784 verbose exit [ 1, true ]
