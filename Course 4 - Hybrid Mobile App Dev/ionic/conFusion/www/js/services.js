@@ -4,9 +4,7 @@
 angular.module('confusionApp.services', ['ngResource'])
         .constant("baseURL", "http://localhost:3000/")
         .service('menuFactory', ['$resource','baseURL',
-    function($resource,baseURL) {
-
-
+function($resource,baseURL) {
     
            var promotions = [
                 {
