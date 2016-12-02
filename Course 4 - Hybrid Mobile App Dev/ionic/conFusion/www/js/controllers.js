@@ -183,7 +183,10 @@ angular.module('conFusion.controllers', [])
 
         }])
 
-        .controller('IndexController', ['$scope', 'menuFactory', 'corporateFactory', function($scope, menuFactory, corporateFactory) {
+        .controller('IndexController', ['$scope', 'menuFactory', 'corporateFactory', 'baseURL',function($scope, menuFactory,  corporateFactory, baseURL) {
+            
+            $scope.baseURL = baseURL;
+            console.log(baseURL);
             $scope.dishes= menuFactory.getDishes();
 
            $scope.showDish = true;
