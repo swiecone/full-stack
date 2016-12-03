@@ -185,11 +185,12 @@ angular.module('conFusion.controllers', [])
 
         .controller('IndexController', ['$scope', 'menuFactory', 'corporateFactory', 'baseURL',function($scope, menuFactory,  corporateFactory, baseURL) {
             
+            //$scope.leader = corporateFactory.get({id:3});
             $scope.baseURL = baseURL;
             console.log(baseURL);
             $scope.dishes= menuFactory.getDishes();
 
-           $scope.showDish = true;
+           $scope.showDish = false;
            $scope.message = "Special Dish loading...";  
            
            $scope.dish = menuFactory.getDishes().get({id:0})
@@ -204,6 +205,7 @@ angular.module('conFusion.controllers', [])
                             });
 
             var promo = menuFactory.getPromotion(parseInt('0',10));
+            console.log(promo);
             $scope.promo = promo;            
           //  console.log(dish);
 
