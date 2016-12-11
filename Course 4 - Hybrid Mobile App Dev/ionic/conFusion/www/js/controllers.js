@@ -83,6 +83,7 @@ angular.module('conFusion.controllers', [])
 
             $scope.isSelected = function (checkTab) {
                 return ($scope.tab === checkTab);
+                console.log(checkTab);
             };
     
             $scope.showDetails = true;
