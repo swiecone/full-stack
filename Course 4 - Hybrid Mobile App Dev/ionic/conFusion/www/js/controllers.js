@@ -178,10 +178,11 @@ angular.module('conFusion.controllers', [])
        // implement the IndexController and About Controller here
 
 
-        .controller('AboutController', ['$scope', 'corporateFactory', function($scope,corporateFactory) {
-
+        .controller('AboutController', ['$scope', 'corporateFactory', 'baseURL' ,function($scope, corporateFactory, baseURL) {
+            
+          $scope.baseURL = baseURL;
           $scope.leadership = corporateFactory.getLeaders();
-          console.log($scope.leadership);
+          console.log("Printing the leaders inside the about Controller: "+$scope.leadership);
 
 
         }])
@@ -190,7 +191,7 @@ angular.module('conFusion.controllers', [])
             
             //$scope.leader = corporateFactory.get({id:3});
             $scope.baseURL = baseURL;
-            console.log(baseURL);
+            console.log("This is the base URL:"+baseURL);
             $scope.dishes= menuFactory.getDishes();
 
            $scope.showDish = false;
@@ -208,12 +209,11 @@ angular.module('conFusion.controllers', [])
                             });
 
             var promo = menuFactory.getPromotion(parseInt('0',10));
-            console.log(promo);
+            console.log("This is the promotion we will print: "+promo);
             $scope.promo = promo;            
-          //  console.log(dish);
 
            $scope.leader = corporateFactory.getLeader(parseInt('0',10));
-           console.log($scope.leader);
+           console.log("This is the leader we will see: "+$scope.leader);
 
 
         }])
