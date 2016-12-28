@@ -3,8 +3,8 @@
 
 angular.module('conFusion.services', ['ngResource'])
         .constant("baseURL", "http://localhost:3000/")
-        .service('menuFactory', ['$resource','baseURL',
-function($resource,baseURL) {
+
+        .service('menuFactory', ['$resource','baseURL', function($resource,baseURL) {
     
            var promotions = [
                 {
@@ -21,8 +21,6 @@ function($resource,baseURL) {
                     this.getDishes = function(){
                                         return $resource(baseURL+"dishes/:id", null,{'update':{method:'PUT'}});
                                     };
-
-                  
 
                    // implement a function named getPromotion
                 // that returns a selected promotion.
