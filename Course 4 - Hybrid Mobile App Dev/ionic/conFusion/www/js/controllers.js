@@ -255,7 +255,8 @@ angular.module('conFusion.controllers', [])
 
         }])
 
-.controller('FavoritesController', ['$scope', 'menuFactory', 'favoriteFactory', 'baseURL', '$ionicListDelegate', function ($scope, menuFactory, favoriteFactory, baseURL, $ionicListDelegate) {
+.controller('FavoritesController', ['$scope', 'menuFactory', 'favoriteFactory', 'baseURL', '$ionicListDelegate', 
+  '$ionicPopup', function ($scope, menuFactory, favoriteFactory, baseURL, $ionicListDelegate, $ionicPopup) {
 
     $scope.baseURL = baseURL;
     $scope.shouldShowDelete = false;
@@ -278,9 +279,23 @@ angular.module('conFusion.controllers', [])
 
     $scope.deleteFavorite = function (index) {
         
-        favoriteFactory.deleteFromFavorites(index);
-        $scope.shouldShowDelete = false;
+      var confirmPopup = $ionicPopup.confirm({
+          title: 'Confirm Delete',
+          template: 'Are you sure you want to delete this item?'
+      });
 
+        confirmPopup.then(function(res){
+          if(res) {
+            console.log('OK to delete' + res);
+            favoriteFactory.deleteFromFavorites(index);
+            $scope.shouldShowDelete = false;
+          } else {
+            console.log('Canceled delete');
+            $scope.shouldShowDelete = false;
+          }
+        });
+
+       
     }}])
 
 .filter('favoriteFilter', function () {
