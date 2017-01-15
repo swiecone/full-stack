@@ -1,7 +1,23 @@
 <ion-view view-title="Dish Detail">
 	<ion-nav-buttons side="right">
-      <button class="button button-clear ion-more icon-left" ng-click="showDishMenu()">
+      <button class="button button-clear ion-more icon-left" ng-click="popover.show($event)">
+
+		 <script id="templates/popover.html" type="text/ng-template">
+		      <ion-popover-view>
+		        <ion-content>
+		          <div class="list">
+		            <a class="item" href="http://learn.ionicframework.com/" target="_blank">
+						Add to Favorites		            </a>
+		            <a class="item" href="http://ionicframework.com/docs/" target="_blank">
+						Add Comment
+				    </a>
+		          </div>
+		        </ion-content>
+		      </ion-popover-view>
+		    </script>
+
       	</button>
+
    </ion-nav-buttons>
 
   <ion-content>
